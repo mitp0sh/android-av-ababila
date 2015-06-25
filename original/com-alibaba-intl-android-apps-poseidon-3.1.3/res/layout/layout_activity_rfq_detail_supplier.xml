@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:alibaba="http://schemas.android.com/apk/res/com.alibaba.intl.android.apps.poseidon">
+    <com.alibaba.intl.android.apps.poseidon.ui.control.CtrlFooterActionBar android:gravity="center_vertical" android:id="@id/id_footer_action_bar" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" />
+    <com.alibaba.intl.android.graphics.pulltorefresh.PullToRefreshListView android:id="@id/id_list_activity_rfq_detail_supplier" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent" android:listSelector="#00000000" android:cacheColorHint="#00000000" android:divider="@drawable/line_h_grey" android:dividerHeight="0.5dip" android:layout_above="@id/id_footer_action_bar" android:footerDividersEnabled="false" alibaba:ptrAdapterViewBackground="@color/white" alibaba:ptrHeaderBackground="@color/white" alibaba:ptrHeaderTextColor="@color/color_value_9" alibaba:ptrHeaderSubTextColor="@color/color_value_9" alibaba:ptrShowIndicator="false" />
+</RelativeLayout>

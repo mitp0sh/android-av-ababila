@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/id_frag_home_ctrl_search_box" android:background="@drawable/ic_top_action_bar_bg" android:layout_width="fill_parent" android:layout_height="@dimen/dimen_title_height">
+        <TextView android:textSize="15.0sp" android:textColorHint="@color/color_value_a" android:gravity="center_vertical" android:id="@id/id_ctrl_searcher_box_edit" android:background="@drawable/searchview_textfield_bg" android:paddingLeft="12.0dip" android:paddingRight="36.0dip" android:layout_width="fill_parent" android:layout_height="36.0dip" android:layout_marginLeft="8.0dip" android:layout_marginRight="8.0dip" android:hint="@string/search_hint_text" android:singleLine="true" android:drawableLeft="@drawable/ic_search" android:layout_centerVertical="true" />
+    </RelativeLayout>
+</LinearLayout>

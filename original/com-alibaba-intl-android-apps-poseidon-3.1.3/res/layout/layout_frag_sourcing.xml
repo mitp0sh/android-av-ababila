@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="15.0sp" android:textColor="@color/color_value_3" android:background="@color/color_value_e" android:paddingLeft="8.0dip" android:paddingTop="8.0dip" android:paddingRight="8.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/str_sourcing_rfq_title" />
+    <TextView android:textSize="15.0sp" android:textColor="@color/color_value_9" android:background="@color/color_value_e" android:paddingLeft="8.0dip" android:paddingRight="8.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/str_sourcing_rfq_desc" />
+    <LinearLayout android:orientation="horizontal" android:background="@color/color_value_e" android:paddingLeft="8.0dip" android:paddingTop="4.0dip" android:paddingRight="8.0dip" android:paddingBottom="4.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" android:layout_marginBottom="2.0dip">
+        <ImageButton android:id="@id/id_btn_camera_frag_sourcing" android:background="@null" android:layout_width="0.0dip" android:layout_height="wrap_content" android:src="@drawable/ic_sourcing_camera" android:layout_weight="1.0" android:contentDescription="@null" />
+        <ImageButton android:id="@id/id_btn_gallery_frag_sourcing" android:background="@null" android:layout_width="0.0dip" android:layout_height="wrap_content" android:src="@drawable/ic_sourcing_gallery" android:layout_weight="1.0" android:contentDescription="@null" />
+        <ImageButton android:id="@id/id_btn_text_frag_sourcing" android:background="@null" android:layout_width="0.0dip" android:layout_height="wrap_content" android:src="@drawable/ic_sourcing_text" android:layout_weight="1.0" android:contentDescription="@null" />
+        <ImageButton android:id="@id/id_btn_video_frag_sourcing" android:background="@null" android:layout_width="0.0dip" android:layout_height="wrap_content" android:src="@drawable/ic_sourcing_video" android:layout_weight="1.0" android:contentDescription="@null" />
+        <ImageButton android:id="@id/id_btn_audio_frag_sourcing" android:background="@null" android:layout_width="0.0dip" android:layout_height="wrap_content" android:src="@drawable/ic_sourcing_audio" android:layout_weight="1.0" android:contentDescription="@null" />
+    </LinearLayout>
+    <View android:background="@color/color_value_c" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+    <com.alibaba.intl.android.graphics.pageindicator.TabPageIndicator android:id="@id/id_tab_indicator_frag_sourcing" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <android.support.v4.view.ViewPager android:id="@id/id_view_pager_frag_sourcing" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</LinearLayout>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ScrollView android:background="@drawable/bg_windows_screen" android:scrollbars="none" android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <com.alibaba.intl.android.picture.widget.LoadableImageView android:id="@id/head" android:background="@drawable/atm_head_rectangle" android:layout_marginLeft="15.0dip" android:layout_marginTop="10.0dip" android:layout_marginBottom="10.0dip" android:src="@drawable/ic_portrait_default" android:adjustViewBounds="true" android:layout_alignParentLeft="true" android:contentDescription="@string/content_desc_null" style="@style/large_head_view_style" />
+                <TextView android:textSize="20.0sp" android:textStyle="normal" android:textColor="@color/black" android:gravity="center" android:id="@id/people_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="17.0dip" android:maxEms="15" android:layout_toRightOf="@id/head" android:layout_alignTop="@id/head" />
+            </RelativeLayout>
+            <LinearLayout android:orientation="horizontal" android:id="@id/self_desc" android:background="@drawable/bg_atm_setting_mid" android:paddingTop="12.0dip" android:paddingBottom="12.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dip">
+                <TextView android:gravity="right" android:id="@id/self_desc_title" android:layout_width="80.0dip" android:layout_height="wrap_content" android:text="@string/profile_signature" style="@style/profile_title_text_style" />
+                <TextView android:id="@id/self_desc_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="false" style="@style/profile_content_text_style" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:id="@id/atm_id" android:background="@drawable/bg_atm_setting_mid" android:paddingTop="12.0dip" android:paddingBottom="12.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="15.0dip">
+                <TextView android:gravity="right" android:id="@id/atm_id_title" android:layout_width="80.0dip" android:layout_height="wrap_content" android:text="@string/profile_ID" style="@style/profile_title_text_style" />
+                <TextView android:id="@id/atm_id_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="false" style="@style/profile_content_text_style" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:background="@drawable/bg_atm_setting_mid" android:paddingTop="12.0dip" android:paddingBottom="12.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:gravity="right" android:id="@id/company_name_title" android:layout_width="80.0dip" android:layout_height="wrap_content" android:text="@string/profile_company_title" style="@style/profile_title_text_style" />
+                <TextView android:id="@id/company_name_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="false" style="@style/profile_content_text_style" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:id="@id/reg_country" android:background="@drawable/bg_atm_setting_mid" android:paddingTop="12.0dip" android:paddingBottom="12.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="15.0dip">
+                <TextView android:gravity="right" android:id="@id/reg_country_title" android:layout_width="130.0dip" android:layout_height="wrap_content" android:text="@string/profile_reg_country_title" style="@style/profile_title_text_style" />
+                <com.alibaba.intl.android.picture.widget.LoadableImageView android:id="@id/reg_country_img" android:layout_width="26.0dip" android:layout_height="13.0dip" android:layout_marginLeft="10.0dip" android:layout_marginTop="5.0dip" android:scaleType="fitCenter" android:contentDescription="@string/content_desc_null" />
+                <TextView android:textSize="16.0sp" android:textColor="@color/black" android:id="@id/reg_country_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:id="@id/login_country" android:background="@drawable/bg_atm_setting_mid" android:paddingTop="12.0dip" android:paddingBottom="12.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="15.0dip">
+                <TextView android:gravity="right" android:id="@id/login_country_title" android:layout_width="130.0dip" android:layout_height="wrap_content" android:text="@string/profile_login_country_title" style="@style/profile_title_text_style" />
+                <com.alibaba.intl.android.picture.widget.LoadableImageView android:id="@id/login_country_img" android:layout_width="26.0dip" android:layout_height="13.0dip" android:layout_marginLeft="10.0dip" android:layout_marginTop="5.0dip" android:scaleType="fitCenter" android:contentDescription="@string/content_desc_null" />
+                <TextView android:textSize="16.0sp" android:textColor="@color/black" android:id="@id/login_country_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:id="@id/login_loc_time" android:background="@drawable/bg_atm_setting_mid" android:paddingTop="12.0dip" android:paddingBottom="12.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:gravity="right" android:id="@id/login_loc_time_title" android:layout_width="130.0dip" android:layout_height="wrap_content" android:text="@string/profile_login_loc_time_title" style="@style/profile_title_text_style" />
+                <TextView android:id="@id/login_loc_time_text" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/profile_content_text_style" />
+            </LinearLayout>
+            <TextView android:layout_width="fill_parent" android:layout_height="48.0dip" />
+        </LinearLayout>
+    </ScrollView>
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/id_ll_atm_contact_operate" android:background="@drawable/friendinfo_bottom_bg" android:layout_width="fill_parent" android:layout_height="48.0dip" android:layout_alignParentBottom="true">
+        <Button android:textSize="15.0sp" android:textColor="@color/white" android:gravity="center" android:id="@id/btn_send_message" android:background="@drawable/atm_orange_btn_bg" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginRight="5.0dip" android:text="@string/profile_send_btn" android:singleLine="true" android:shadowColor="#a6000000" android:shadowDx="0.0" android:shadowDy="-1.0" android:shadowRadius="1.0" android:layout_weight="1.0" />
+    </LinearLayout>
+</RelativeLayout>

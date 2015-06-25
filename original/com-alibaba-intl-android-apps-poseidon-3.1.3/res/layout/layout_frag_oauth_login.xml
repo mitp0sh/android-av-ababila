@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.alibaba.intl.android.graphics.resizelayout.ResizeLinearLayout android:orientation="vertical" android:background="@color/color_value_f8" android:layout_width="fill_parent" android:layout_height="fill_parent" android:baselineAligned="false"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View style="@style/common_blank" />
+    <TextView android:textColor="@color/color_value_3" android:gravity="center_vertical" android:id="@id/id_toast_frag_oauth_login" android:background="@drawable/bg_error_info" android:paddingLeft="8.0dip" android:paddingRight="4.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_margin_left" android:layout_marginTop="@dimen/dimen_margin_top" android:layout_marginRight="@dimen/dimen_margin_right" android:text="@string/str_sign_in" />
+    <View style="@style/common_divider" />
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <EditText android:textColorHint="@color/color_value_c" android:id="@id/id_edit_account_frag_oauth_login" android:hint="@string/str_account_hint" android:singleLine="true" android:digits="@string/str_account_id_digits" android:inputType="text" android:filterTouchesWhenObscured="true" style="@style/ios_edittext" />
+        <ImageView android:id="@id/id_edit_account_clear_frag_oauth_login" android:paddingLeft="8.0dip" android:paddingRight="8.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_text_clear" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:contentDescription="@null" />
+    </RelativeLayout>
+    <View style="@style/common_divider_broken" />
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <EditText android:textStyle="normal" android:textColorHint="@color/color_value_c" android:id="@id/id_edit_password_frag_oauth_login" android:hint="@string/str_password_hint" android:singleLine="true" android:inputType="textPassword" android:filterTouchesWhenObscured="true" style="@style/ios_edittext" />
+        <ImageView android:id="@id/id_edit_pswd_clear_frag_oauth_login" android:paddingLeft="8.0dip" android:paddingRight="8.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_text_clear" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:contentDescription="@null" />
+    </RelativeLayout>
+    <View style="@style/common_divider" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/id_layout_verf_frag_oauth_login" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <EditText android:typeface="sans" android:id="@id/id_edit_verf_code_frag_oauth_login" android:layout_width="0.0dip" android:hint="@string/str_verification_code_hint" android:singleLine="true" android:layout_weight="2.0" android:inputType="text" android:filterTouchesWhenObscured="true" style="@style/ios_edittext" />
+        <View style="@style/common_divider_vertical" />
+        <ImageView android:gravity="center" android:id="@id/id_text_verf_code_frag_oauth_login" android:background="@color/gray" android:layout_width="0.0dip" android:layout_height="fill_parent" android:scaleType="fitXY" android:layout_weight="1.0" android:contentDescription="@string/content_desc_null" />
+    </LinearLayout>
+    <View android:id="@id/id_divider_verf_frag_oauth_login" android:visibility="gone" style="@style/common_divider" />
+    <Button android:id="@id/id_button_sign_frag_oauth_login" android:background="@drawable/button_detail_contact" android:paddingLeft="20.0dip" android:paddingTop="8.0dip" android:paddingRight="20.0dip" android:paddingBottom="8.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_margin_left" android:layout_marginTop="20.0dip" android:layout_marginRight="@dimen/dimen_margin_right" android:text="@string/str_sign_in" android:filterTouchesWhenObscured="true" style="@style/AliButtonTextAppearance.White" />
+    <TextView android:textColor="@color/blue" android:layout_gravity="right" android:id="@id/id_text_forgot_password_frag_oauth_login" android:paddingTop="4.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/dimen_margin_right" android:text="@string/str_forget_password" />
+</com.alibaba.intl.android.graphics.resizelayout.ResizeLinearLayout>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item type="drawable" name="transparent_background">#00000000</item>
+    <item type="drawable" name="ic_campus_waterfall_item_ink_blue_bg_n">#ff5e899c</item>
+    <item type="drawable" name="ic_campus_waterfall_item_ink_blue_bg_p">#ff208196</item>
+    <item type="drawable" name="ic_campus_waterfall_item_yellow_bg_p">#fff2d03f</item>
+    <item type="drawable" name="ic_campus_waterfall_item_yellow_bg_n">#ffebc212</item>
+    <item type="drawable" name="bg_transparent">#00000000</item>
+    <item type="drawable" name="bg_transparent_half">#60000000</item>
+    <item type="drawable" name="bg_title_action_bar">#fff7f7f7</item>
+    <item type="drawable" name="bg_windows_screen">#ffeeeeee</item>
+    <item type="drawable" name="bg_product_screen">#fff1f1f1</item>
+    <item type="drawable" name="divider_line">#ff000000</item>
+    <item type="drawable" name="bg_white">#ffffffff</item>
+    <item type="drawable" name="bg_blue_dark">#ff0099cc</item>
+    <item type="drawable" name="ic_launcher_default">#ff1996e6</item>
+    <item type="drawable" name="bg_list_item">#ffdddddd</item>
+    <item type="drawable" name="button_green_normal">#ff17c758</item>
+    <item type="drawable" name="button_green_pressed">#ff17c758</item>
+    <item type="drawable" name="button_green_disabled">#ffcccccc</item>
+</resources>

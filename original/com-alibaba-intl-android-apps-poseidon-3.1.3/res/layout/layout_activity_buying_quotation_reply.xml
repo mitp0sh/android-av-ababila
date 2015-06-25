@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/color_value_e" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ListView android:id="@id/id_list_activity_quotation_reply" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_marginLeft="10.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="10.0dip" android:layout_marginBottom="2.0dip" android:cacheColorHint="#00000000" android:divider="@null" android:dividerHeight="5.0dip" android:layout_weight="1.0" />
+    <LinearLayout android:gravity="center_vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="5.0dip">
+        <EditText android:textSize="16.0sp" android:textColor="@color/color_value_3" android:textColorHint="@color/color_value_a" android:id="@id/id_activity_message_quotation_reply" android:background="@drawable/bg_edit_view_n" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:hint="@string/str_edit_hint" android:singleLine="true" android:digits="@string/str_edit_text_input_enter_digits" android:layout_weight="1.0" />
+        <Button android:textColor="@color/white" android:id="@id/id_activity_send_quotation_reply" android:background="@drawable/bg_button_active_orange" android:paddingTop="4.0dip" android:paddingBottom="4.0dip" android:layout_width="50.0dip" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:text="@string/str_send" />
+    </LinearLayout>
+</LinearLayout>

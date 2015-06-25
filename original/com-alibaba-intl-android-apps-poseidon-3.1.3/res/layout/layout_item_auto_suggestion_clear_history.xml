@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <Button android:textSize="16.0sp" android:textColor="@color/color_value_3" android:gravity="center" android:id="@id/id_button_clear_recently_search_auto_suggestion" android:background="@drawable/ma_button_selector" android:padding="8.0dip" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="16.0dip" android:layout_marginTop="8.0dip" android:layout_marginRight="16.0dip" android:layout_marginBottom="8.0dip" android:text="@string/str_clear_recently_search" />
+</RelativeLayout>

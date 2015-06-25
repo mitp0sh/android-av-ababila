@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@drawable/catelogs_recommend_list_selector" android:layout_width="fill_parent" android:layout_height="fill_parent" android:minHeight="50.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="15.0sp" android:textColor="@color/color_value_6" android:id="@id/id_name_item_catalogs_recommend" android:paddingLeft="20.0dip" android:paddingRight="12.0dip" android:layout_width="0.0dip" android:layout_height="wrap_content" android:singleLine="true" android:layout_weight="1.0" android:textIsSelectable="false" />
+    <ImageView android:layout_gravity="center_vertical" android:id="@id/id_icon_selected_item_catalogs_recommend" android:visibility="gone" android:layout_width="20.0dip" android:layout_height="wrap_content" android:layout_marginRight="20.0dip" android:src="@drawable/abs_ic_checked" android:contentDescription="@string/content_desc_null" />
+</LinearLayout>

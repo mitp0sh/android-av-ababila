@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <android.support.v4.view.ViewPager android:id="@id/id_pager_activity_guider" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <LinearLayout android:gravity="center" android:id="@id/id_indicator_activity_guider" android:padding="24.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+    <ImageView android:id="@id/id_start_now_activity_guider" android:paddingLeft="30.0dip" android:paddingRight="30.0dip" android:paddingBottom="13.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="16.0dip" android:src="@drawable/guider_enter_new" android:layout_alignBottom="@id/id_indicator_activity_guider" android:layout_centerHorizontal="true" android:contentDescription="@null" />
+</RelativeLayout>

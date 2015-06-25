@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="center_vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="15.0sp" android:textColor="@color/color_value_6" android:id="@id/id_name_item_subscription_child" android:padding="4.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:layout_marginTop="8.0dip" android:singleLine="true" android:layout_toLeftOf="@id/id_checkbox_item_subscription_child" android:textIsSelectable="false" />
+    <CheckBox android:id="@id/id_checkbox_item_subscription_child" android:focusable="false" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="2.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" style="@style/AliCheckboxAppearance.Add" />
+    <View android:background="@drawable/line_h_grey" android:layout_width="fill_parent" android:layout_height="0.5dip" android:layout_marginTop="10.0dip" android:layout_below="@id/id_name_item_subscription_child" />
+</RelativeLayout>

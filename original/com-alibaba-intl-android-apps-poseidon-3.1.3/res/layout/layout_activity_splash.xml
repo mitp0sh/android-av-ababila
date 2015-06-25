@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@drawable/bg_windows_screen" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/id_logo_activity_splash" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="100.0dip" android:src="@drawable/ic_splash_logo" android:layout_centerHorizontal="true" />
+    <TextView android:textSize="13.0sp" android:textColor="@color/color_value_9" android:gravity="center" android:id="@id/id_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="13.0dip" android:text="@string/str_right_at_alibaba" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+</RelativeLayout>

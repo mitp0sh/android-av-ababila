@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:layout_marginTop="4.0dip" android:layout_marginRight="8.0dip">
+        <TextView android:textSize="15.0sp" android:textColor="@color/color_value_9" android:id="@id/id_label_item" android:layout_width="120.0dip" android:layout_height="wrap_content" android:text="@string/str_product" />
+        <TextView android:textSize="15.0sp" android:textColor="@color/color_value_3" android:id="@id/id_name_item_product_info" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="solar led street light, low price solar streets of solar" />
+    </LinearLayout>
+    <LinearLayout android:textSize="13.0sp" android:orientation="vertical" android:id="@id/id_tablelayout_item_quotation_info" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" />
+    <TextView android:textSize="15.0sp" android:textColor="@color/color_value_9" android:id="@id/id_detail_label_item_product_info" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:layout_marginTop="4.0dip" android:layout_marginRight="8.0dip" android:text="Detail:" />
+    <TextView android:textSize="15.0sp" android:textColor="@color/color_value_3" android:id="@id/id_detail_value_item_product_info" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:layout_marginRight="8.0dip" android:text="solar led street light, low price solar streets of solar" />
+    <RelativeLayout android:id="@id/id_thumb_product" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:layout_marginTop="12.0dip" android:layout_marginRight="8.0dip" android:layout_marginBottom="12.0dip">
+        <View android:id="@id/id_line_grey" android:background="@drawable/line_h_grey" android:layout_width="fill_parent" android:layout_height="0.5dip" android:layout_marginBottom="12.0dip" />
+        <com.alibaba.intl.android.picture.widget.LoadableImageView android:gravity="center" android:id="@id/id_thumb_item_product_info" android:background="@drawable/view_corner_quotation_detail_image_style" android:layout_width="72.0dip" android:layout_height="72.0dip" android:scaleType="fitCenter" android:layout_below="@id/id_line_grey" />
+    </RelativeLayout>
+</LinearLayout>

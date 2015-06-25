@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="guider_image_margin_top">96.0dip</dimen>
+    <dimen name="frag_sourcing_buy_trends_supplier_text_size">28.0sp</dimen>
+    <dimen name="frag_sourcing_buy_trends_supplier_desc_size">15.0sp</dimen>
+</resources>

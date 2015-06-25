@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="@drawable/bg_windows_screen" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/ma_bg" android:layout_width="fill_parent" android:layout_height="640.0dip" android:layout_marginTop="-400.0dip" android:scaleType="fitXY" android:contentDescription="@string/ma_background_description" />
+    <com.alibaba.intl.android.graphics.scroller.CustomScrollView android:id="@id/id_layout_scroll_view" android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true">
+        <LinearLayout android:orientation="vertical" android:paddingBottom="@dimen/dimen_home_bottom_padding_dp" android:layout_width="fill_parent" android:layout_height="wrap_content" android:baselineAligned="false">
+            <FrameLayout android:layout_width="fill_parent" android:layout_height="240.0dip">
+                <LinearLayout android:gravity="center" android:layout_gravity="center_vertical" android:orientation="vertical" android:id="@id/id_ma_welcome_layout" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginBottom="30.0dip">
+                    <TextView android:textAppearance="?android:textAppearanceSmall" android:textSize="24.0sp" android:textColor="@color/black" android:ellipsize="end" android:layout_gravity="center" android:id="@id/id_welcome_frag_personal_menu" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/str_welcome_sign_in" android:singleLine="true" />
+                    <Button android:textSize="16.0sp" android:textColor="@color/color_value_3" android:layout_gravity="center" android:id="@id/id_sign_in_frag_personal_menu" android:background="@drawable/ma_sign_in_button_selector" android:paddingLeft="22.0dip" android:paddingTop="12.0dip" android:paddingRight="22.0dip" android:paddingBottom="12.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" android:text="@string/str_sign_in_join" android:alpha="100.0" />
+                </LinearLayout>
+                <LinearLayout android:gravity="center_horizontal" android:layout_gravity="center" android:orientation="horizontal" android:id="@id/id_ma_sign_in_layout" android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:visibility="invisible" android:layout_width="260.0dip" android:layout_height="96.0dip" android:layout_marginBottom="30.0dip" android:baselineAligned="true">
+                    <com.alibaba.intl.android.apps.poseidon.util.CircleImageView android:layout_gravity="center_vertical" android:id="@id/id_avatar_frag_personal_menu" android:layout_width="90.0dip" android:layout_height="90.0dip" android:layout_marginRight="5.0dip" android:layout_weight="1.0" />
+                    <LinearLayout android:gravity="left" android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0">
+                        <TextView android:textAppearance="?android:textAppearanceSmall" android:textSize="24.0sp" android:textColor="@color/black" android:ellipsize="end" android:layout_gravity="center_vertical" android:id="@id/id_name_frag_personal_menu" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxWidth="150.0dip" android:singleLine="true" />
+                    </LinearLayout>
+                </LinearLayout>
+                <ImageView android:layout_gravity="right" android:id="@id/id_settings_frag_personal_menu" android:layout_width="30.0dip" android:layout_height="30.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="10.0dip" android:src="@drawable/sel_tab_item_icon_settings" android:contentDescription="@string/content_desc_null" />
+                <LinearLayout android:layout_gravity="bottom" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <View android:background="@color/am_bt_border_bg" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+                    <LinearLayout android:paddingLeft="0.0dip" android:paddingTop="0.0dip" android:paddingRight="0.0dip" android:paddingBottom="0.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <RelativeLayout android:gravity="center" android:orientation="vertical" android:id="@id/id_msg_group_frag_personal_menu" android:background="@drawable/am_button_background_selector" android:paddingTop="4.0dip" android:paddingBottom="12.0dip" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                            <ImageView android:id="@id/id_iv_messages_frag_personal_menu" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:src="@drawable/ic_ma_msg" android:contentDescription="@string/content_desc_null" />
+                            <TextView android:textSize="14.0sp" android:textStyle="bold" android:textColor="@color/white" android:gravity="center" android:id="@id/id_unread_count_frag_personal_menu" android:background="@drawable/bg_ma_msg_number" android:visibility="invisible" android:layout_width="26.0dip" android:layout_height="wrap_content" android:layout_marginLeft="-10.0dip" android:layout_marginBottom="20.0dip" android:layout_toRightOf="@id/id_iv_messages_frag_personal_menu" android:layout_alignBottom="@id/id_iv_messages_frag_personal_menu" android:textIsSelectable="false" />
+                            <TextView android:textSize="14.0sp" android:textColor="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:layout_marginTop="17.0dip" android:text="@string/str_personal_message" android:layout_toRightOf="@id/id_iv_messages_frag_personal_menu" />
+                        </RelativeLayout>
+                        <View android:background="@color/am_bt_border_bg" android:layout_width="0.5dip" android:layout_height="fill_parent" />
+                        <RelativeLayout android:gravity="center" android:orientation="vertical" android:id="@id/id_atm_group_frag_personal_menu" android:background="@drawable/am_button_background_selector" android:paddingTop="4.0dip" android:paddingBottom="12.0dip" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                            <ImageView android:id="@id/id_iv_atm_frag_personal_menu" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:src="@drawable/ic_ma_atm" android:contentDescription="@string/content_desc_null" />
+                            <ImageView android:id="@id/id_unread_atm_frag_personal_menu" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="-3.0dip" android:layout_marginBottom="20.0dip" android:src="@drawable/ic_dot_orange" android:layout_toRightOf="@id/id_iv_atm_frag_personal_menu" android:layout_alignBottom="@id/id_iv_atm_frag_personal_menu" />
+                            <TextView android:textSize="14.0sp" android:textColor="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:layout_marginTop="17.0dip" android:text="@string/str_personal_atm" android:layout_toRightOf="@id/id_iv_atm_frag_personal_menu" />
+                        </RelativeLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </FrameLayout>
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="15.0dip">
+                <View android:background="@drawable/line_h_grey" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+                <ListView android:id="@id/id_list" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="wrap_content" android:cacheColorHint="#00000000" android:divider="@drawable/line_h_grey" android:dividerHeight="0.5dip" android:headerDividersEnabled="true" android:footerDividersEnabled="true" />
+                <View android:background="@drawable/line_h_grey" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@id/id_plugin_layout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="30.0dip">
+                <View android:background="@drawable/line_h_grey" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+                <ListView android:id="@id/id_list_plugin" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="wrap_content" android:cacheColorHint="#00000000" android:divider="@drawable/line_h_grey" android:dividerHeight="0.5dip" android:headerDividersEnabled="true" android:footerDividersEnabled="true" />
+                <View android:background="@drawable/line_h_grey" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+            </LinearLayout>
+        </LinearLayout>
+    </com.alibaba.intl.android.graphics.scroller.CustomScrollView>
+</RelativeLayout>

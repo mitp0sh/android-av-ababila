@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.alibaba.intl.android.apps.poseidon">
+    <supports-screens android:anyDensity="true" android:largeScreens="true" android:xlargeScreens="true"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.RAISED_THREAD_PRIORITY"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.GET_TASKS"/>
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"/>
+    <permission android:name="com.ut.permission.DEVICE_STATE"/>
+    <permission android:description="@string/str_agoo_setting_permission_description" android:label="agoo_push_setting" android:name="com.alibaba.intl.permission.AGOO_PUSH_SETTING" android:protectionLevel="signature"/>
+    <uses-permission android:name="com.ut.permission.DEVICE_STATE"/>
+    <uses-permission android:name="com.alibaba.intl.permission.AGOO_PUSH_SETTINGE"/>
+    <uses-permission android:name="android.permission.WRITE_SETTINGS"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"/>
+    <uses-permission android:name="com.taobao.taobao.permission.C2D_MESSAGE"/>
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE"/>
+    <uses-permission android:name="android.permission.BROADCAST_PACKAGE_ADDED"/>
+    <uses-permission android:name="android.permission.BROADCAST_PACKAGE_CHANGED"/>
+    <uses-permission android:name="android.permission.BROADCAST_PACKAGE_INSTALL"/>
+    <uses-permission android:name="android.permission.BROADCAST_PACKAGE_REPLACED"/>
+    <uses-permission android:name="android.permission.RESTART_PACKAGES"/>
+    <uses-permission android:name="android.permission.GET_TASKS"/>
+    <uses-permission android:name="android.permission.GET_ACCOUNTS"/>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+    <uses-feature android:name="android.hardware.telephony" android:required="false"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-feature android:name="android.hardware.camera"/>
+    <uses-feature android:name="android.hardware.camera.autofocus"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.RECORD_AUDIO"/>
+    <uses-permission android:name="android.permission.STORAGE"/>
+    <uses-permission android:name="android.permission.FLASHLIGHT"/>
+    <uses-permission android:name="android.permission.RECORD_AUDIO"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <application android:allowBackup="true" android:icon="@drawable/ic_launcher" android:label="@string/app_name" android:name="com.alibaba.intl.android.apps.poseidon.ApplicationPoseidon" android:theme="@style/AppTheme">
+        <meta-data android:name="CHANNEL" android:value="700881"/>
+        <activity android:label="@string/app_name" android:name="com.alibaba.intl.android.apps.poseidon.ui.ActSplash" android:screenOrientation="portrait" android:theme="@android:style/Theme.Light.NoTitleBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="home" android:scheme="enalibaba"/>
+            </intent-filter>
+        </activity>
+        <activity android:launchMode="singleTop" android:name="com.alibaba.intl.android.apps.poseidon.ui.ActGuider" android:screenOrientation="portrait" android:theme="@android:style/Theme.Light.NoTitleBar"/>
+        <activity android:launchMode="singleTop" android:name="com.alibaba.intl.android.apps.poseidon.ui.ActOldGuider" android:screenOrientation="portrait" android:theme="@android:style/Theme.Light.NoTitleBar"/>
+        <activity android:launchMode="singleTask" android:name="com.alibaba.intl.android.apps.poseidon.ui.ActMain" android:screenOrientation="portrait" android:theme="@style/CustomWindowTitle"/>
+        <activity android:exported="true" android:launchMode="singleTask" android:name="com.alibaba.intl.android.apps.poseidon.ui.ActMainTab" android:screenOrientation="portrait" android:theme="@style/CustomTab"/>
+        <activity android:launchMode="singleTop" android:name="com.alibaba.intl.android.apps.poseidon.ui.ActSearch" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar"/>
+        <activity android:launchMode="singleTop" android:name="com.alibaba.intl.android.apps.poseidon.ui.ActSearchFinder" android:screenOrientation="portrait" android:theme="@style/CustomWindowTitle"/>
+        <activity android:launchMode="singleTop" android:name="com.alibaba.intl.android.apps.poseidon.ui.ActWaterfall" android:screenOrientation="portrait" android:theme="@style/CustomWindowTitle"/>
+        <activity android:launchMode="singleTop" android:name="com.alibaba.intl.android.apps.poseidon.ui.ActPersonalizedRecommend" android:screenOrientation="portrait" android:theme="@style/CustomWindowTitle"/>
+        <activity android:launchMode="singleTop" android:name="com.alibaba.intl.android.apps.poseidon.ui.ActCatalogsRecommend" android:screenOrientation="portrait" android:theme="@style/CustomWindowTitle"/>
+        <activity android:launchMode="singleTop" android:name="com.alibaba.intl.android.apps.poseidon.ui.ActMutiCategories" android:screenOrientation="portrait" android:theme="@style/CustomWindowTitle"/>
+        <activity android:launchMode="singleTop" android:name="com.alibaba.intl.android.apps.poseidon.ui.ActMessageBox" android:screenOrientation="portrait" android:theme="@style/CustomWindowTitle"/>
+        <activity android:launchMode="singleTop" android:name="com.alibaba.intl.android.apps.poseidon.ui.ActQuotesManagement" android:screenOrientation="portrait" android:theme="@style/CustomTransparent"/>
+        <activity android:launchMode="singleTop" android:name="com.alibaba.intl.android.apps.poseidon.ui.ActQuoteDetail" android:screenOrientation="portrait" android:theme="@style/CustomWindowTitle"/>
+        <activity android:launchMode="singleTop" android:name="com.alibaba.intl.android.apps.poseidon.ui.ActQuotationReply" android:screenOrientation="portrait" android:theme="@style/CustomWindowTitle"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:launchMode="singleTop" android:name="com.alibaba.intl.android.apps.poseidon.ui.ActRecordVideo" android:screenOrientation="unspecified" android:theme="@style/CustomWindowTitle"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:launchMode="singleTop" android:name="com.alibaba.intl.android.apps.poseidon.ui.ActVideoPreview" android:theme="@style/CustomWindowTitle"/>
+        <activity android:launchMode="singleTop" android:name="com.alibaba.intl.android.apps.poseidon.ui.ActRecordAudio" android:screenOrientation="portrait" android:theme="@style/CustomTransparent"/>
+        <activity android:launchMode="singleTop" android:name="com.alibaba.intl.android.apps.poseidon.ui.ActSearchRFQFinder" android:screenOrientation="portrait" android:theme="@style/CustomWindowTitle"/>
+        <activity android:launchMode="singleTop" android:name="com.alibaba.intl.android.apps.poseidon.ui.ActMessageBoxSettings" android:screenOrientation="portrait" android:theme="@style/CustomWindowTitle"/>
+        <activity android:launchMode="singleTop" android:name="com.alibaba.intl.android.apps.poseidon.ui.ActNotificationList" android:screenOrientation="portrait" android:theme="@style/CustomWindowTitle"/>
+        <activity android:launchMode="singleTop" android:name="com.alibaba.intl.android.apps.poseidon.ui.ActProductContent" android:screenOrientation="portrait" android:theme="@style/CustomWindowTitle"/>
+        <activity android:launchMode="singleTop" android:name="com.alibaba.intl.android.apps.poseidon.ui.ActProductContentFragment" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="detail" android:scheme="enalibaba"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="sc-detail" android:scheme="enalibaba"/>
+            </intent-filter>
+        </activity>
+        <activity android:launchMode="singleTop" android:name="com.alibaba.intl.android.apps.poseidon.ui.ActProductDetail" android:screenOrientation="portrait" android:theme="@style/CustomWindowTitle"/>
+        <activity android:launchMode="singleTop" android:name="com.alibaba.intl.android.apps.poseidon.ui.ActSupplierProfile" android:screenOrientation="portrait" android:theme="@style/CustomWindowTitle"/>
+        <activity android:configChanges="orientation" android:launchMode="singleTop" android:name="com.alibaba.intl.android.apps.poseidon.ui.ActSubscription" android:screenOrientation="portrait" android:theme="@style/CustomWindowTitle"/>
+        <activity android:configChanges="orientation" android:launchMode="singleTop" android:name="com.alibaba.intl.android.apps.poseidon.ui.ActLogin" android:screenOrientation="portrait" android:theme="@style/CustomWindowTitle"/>
+        <activity android:configChanges="orientation" android:launchMode="singleTop" android:name="com.alibaba.intl.android.apps.poseidon.ui.ActRegister" android:screenOrientation="portrait" android:theme="@style/CustomWindowTitle"/>
+        <activity android:configChanges="orientation" android:name="com.alibaba.intl.android.apps.poseidon.ui.ActCountryPicker" android:screenOrientation="portrait" android:theme="@style/CustomWindowTitle"/>
+        <activity android:configChanges="orientation" android:launchMode="singleTop" android:name="com.alibaba.intl.android.apps.poseidon.ui.ActForgetPassword" android:screenOrientation="portrait" android:theme="@style/CustomWindowTitle"/>
+        <activity android:configChanges="orientation" android:launchMode="singleTop" android:name="com.alibaba.intl.android.apps.poseidon.ui.ActHotProducts" android:screenOrientation="portrait" android:theme="@style/CustomWindowTitle"/>
+        <activity android:configChanges="orientation" android:launchMode="singleTop" android:name="com.alibaba.intl.android.apps.poseidon.ui.ActRecentlyView" android:screenOrientation="portrait" android:theme="@style/CustomWindowTitle"/>
+        <activity android:configChanges="orientation" android:exported="true" android:launchMode="singleTop" android:name="com.alibaba.intl.android.apps.poseidon.ui.ActMessage" android:screenOrientation="portrait" android:theme="@style/StyledIndicators"/>
+        <activity android:configChanges="orientation" android:launchMode="singleTop" android:name="com.alibaba.intl.android.apps.poseidon.ui.ActMessageDraft" android:screenOrientation="portrait" android:theme="@style/CustomWindowTitle"/>
+        <activity android:configChanges="orientation" android:launchMode="singleTop" android:name="com.alibaba.intl.android.apps.poseidon.ui.ActMessageEditor" android:screenOrientation="portrait" android:theme="@style/CustomWindowTitle" android:windowSoftInputMode="adjustResize"/>
+        <activity android:configChanges="orientation" android:launchMode="singleTop" android:name="com.alibaba.intl.android.apps.poseidon.ui.ActMessageBrowse" android:screenOrientation="portrait" android:theme="@style/CustomWindowTitle"/>
+        <activity android:configChanges="orientation" android:exported="true" android:launchMode="singleTop" android:name="com.alibaba.intl.android.apps.poseidon.ui.ActBuyingRequest" android:screenOrientation="portrait" android:theme="@style/CustomWindowTitle"/>
+        <activity android:configChanges="orientation" android:launchMode="singleTop" android:name="com.alibaba.intl.android.apps.poseidon.ui.ActRfqDetailForSupplier" android:screenOrientation="portrait" android:theme="@style/CustomWindowTitle"/>
+        <activity android:configChanges="orientation" android:launchMode="singleTop" android:name="com.alibaba.intl.android.apps.poseidon.ui.ActBuyingRequestDetail" android:screenOrientation="portrait" android:theme="@style/CustomWindowTitle"/>
+        <activity android:configChanges="orientation" android:launchMode="singleTop" android:name="com.alibaba.intl.android.apps.poseidon.ui.ActBuyingRequestPost" android:screenOrientation="portrait" android:theme="@style/CustomWindowTitle" android:windowSoftInputMode="adjustNothing|stateAlwaysHidden">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="rfqPostText" android:scheme="enalibaba"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="orientation" android:launchMode="singleTop" android:name="com.alibaba.intl.android.apps.poseidon.ui.ActBuyingRequestUnitPicker" android:screenOrientation="portrait" android:theme="@style/CustomWindowTitle"/>
+        <activity android:configChanges="orientation" android:launchMode="singleTop" android:name="com.alibaba.intl.android.apps.poseidon.ui.ActBuyingRequestQuotation" android:screenOrientation="portrait" android:theme="@style/CustomWindowTitle"/>
+        <activity android:configChanges="orientation" android:launchMode="singleTop" android:name="com.alibaba.intl.android.apps.poseidon.ui.ActBuyingQuotationReply" android:screenOrientation="portrait" android:theme="@style/CustomWindowTitle" android:windowSoftInputMode="adjustResize"/>
+        <activity android:configChanges="orientation" android:launchMode="singleTop" android:name="com.alibaba.intl.android.apps.poseidon.ui.ActQuotationForm" android:screenOrientation="portrait" android:theme="@style/CustomWindowTitle" android:windowSoftInputMode="adjustResize"/>
+        <activity android:configChanges="orientation" android:launchMode="singleTop" android:name="com.alibaba.intl.android.apps.poseidon.ui.ActQuotationPaymentPicker" android:screenOrientation="portrait" android:theme="@style/CustomWindowTitle" android:windowSoftInputMode="adjustResize"/>
+        <activity android:configChanges="orientation" android:launchMode="singleTop" android:name="com.alibaba.intl.android.apps.poseidon.ui.ActCategoryPicker" android:screenOrientation="portrait" android:theme="@style/CustomWindowTitle"/>
+        <activity android:configChanges="orientation" android:launchMode="singleTop" android:name="com.alibaba.intl.android.apps.poseidon.ui.ActImagePicker" android:screenOrientation="portrait" android:theme="@style/CustomWindowTitle"/>
+        <activity android:label="@string/app_name" android:launchMode="singleTop" android:name="com.alibaba.intl.android.apps.poseidon.ui.ActGalleryBrowserAli" android:screenOrientation="portrait" android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen"/>
+        <activity android:configChanges="orientation" android:launchMode="singleTop" android:name="com.alibaba.intl.android.apps.poseidon.ui.ActFavorite" android:screenOrientation="portrait" android:theme="@style/CustomWindowTitle"/>
+        <activity android:configChanges="orientation" android:launchMode="singleTop" android:name="com.alibaba.intl.android.apps.poseidon.ui.ActSettings" android:screenOrientation="portrait" android:theme="@style/CustomWindowTitle"/>
+        <activity android:configChanges="orientation" android:launchMode="singleTop" android:name="com.alibaba.intl.android.apps.poseidon.ui.ActFragSettings" android:screenOrientation="portrait" android:theme="@style/CustomWindowTitle"/>
+        <activity android:configChanges="orientation" android:launchMode="singleTop" android:name="com.alibaba.intl.android.apps.poseidon.ui.ActContactUs" android:screenOrientation="portrait" android:theme="@style/CustomWindowTitle"/>
+        <activity android:configChanges="orientation" android:launchMode="singleTop" android:name="com.alibaba.intl.android.apps.poseidon.ui.ActAboutUs" android:screenOrientation="portrait" android:theme="@style/CustomWindowTitle"/>
+        <activity android:label="@string/app_name" android:launchMode="singleTop" android:name="com.alibaba.intl.android.picture.ActGalleryBrowser" android:screenOrientation="portrait" android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen"/>
+        <activity android:configChanges="orientation" android:launchMode="singleTop" android:name="com.alibaba.intl.android.apps.poseidon.ui.ActAtmConversation" android:screenOrientation="portrait" android:theme="@style/CustomWindowTitle"/>
+        <activity android:configChanges="orientation" android:launchMode="singleTop" android:name="com.alibaba.intl.android.apps.poseidon.ui.ActAtmTalking" android:screenOrientation="portrait" android:theme="@style/CustomWindowTitle" android:windowSoftInputMode="stateAlwaysHidden">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="atmTalking" android:scheme="enalibaba"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="orientation" android:launchMode="singleTop" android:name="com.alibaba.intl.android.apps.poseidon.ui.ActAtmProfile" android:screenOrientation="portrait" android:theme="@style/CustomWindowTitle"/>
+        <activity android:configChanges="orientation" android:launchMode="singleTop" android:name="com.alibaba.intl.android.apps.poseidon.ui.ActAtmProfileSelf" android:screenOrientation="portrait" android:theme="@style/CustomWindowTitle"/>
+        <activity android:configChanges="orientation" android:launchMode="singleTop" android:name="com.alibaba.intl.android.apps.poseidon.ui.ActAtmImagePreView" android:screenOrientation="portrait" android:theme="@style/CustomWindowTitle"/>
+        <activity android:configChanges="orientation" android:launchMode="singleTop" android:name="com.alibaba.intl.android.apps.poseidon.ui.ActAtmImageViewer" android:screenOrientation="portrait" android:theme="@style/CustomWindowTitle"/>
+        <activity android:configChanges="orientation" android:name="com.alibaba.intl.android.apps.poseidon.ui.ActAtmLogin" android:screenOrientation="portrait" android:theme="@style/login_dialog"/>
+        <activity android:exported="true" android:launchMode="singleTop" android:name="com.alibaba.intl.android.apps.poseidon.ui.ActMailSender" android:screenOrientation="portrait" android:theme="@style/CustomWindowTitle"/>
+        <activity android:exported="true" android:launchMode="singleTop" android:name="com.alibaba.intl.android.apps.poseidon.ui.ActHybridCommon" android:screenOrientation="portrait" android:theme="@style/CustomWindowTitle"/>
+        <activity android:exported="true" android:launchMode="singleTop" android:name="com.alibaba.intl.android.apps.poseidon.ui.ActCamera" android:screenOrientation="landscape" android:theme="@style/CustomWindowTitle"/>
+        <activity android:exported="true" android:launchMode="singleTop" android:name="com.alibaba.intl.android.apps.poseidon.ui.ActBombAnimation" android:screenOrientation="portrait" android:theme="@style/transparentActivity"/>
+        <activity android:exported="true" android:launchMode="singleTop" android:name="com.alibaba.intl.android.apps.poseidon.ui.ActAllProducts" android:screenOrientation="portrait" android:theme="@android:style/Theme.Light.NoTitleBar"/>
+        <activity android:configChanges="orientation" android:launchMode="singleTop" android:name="com.alibaba.intl.android.apps.poseidon.ui.ActSearchMyProduct" android:screenOrientation="portrait" android:theme="@style/CustomWindowTitle"/>
+        <activity android:configChanges="orientation" android:launchMode="singleTop" android:name="com.alibaba.intl.android.apps.poseidon.ui.ActSearchMyProductResult" android:screenOrientation="portrait" android:theme="@style/CustomWindowTitle"/>
+        <service android:name="com.taobao.statistic.module.data.Yolanda" android:process=":utremote"/>
+        <receiver android:exported="true" android:name="com.ut.device.BQueryWhoHasOne" android:permission="com.ut.permission.DEVICE_STATE">
+            <intent-filter>
+                <action android:name="UT.QueryWhoHasOne"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:exported="true" android:name="com.ut.device.BFoundIt" android:permission="com.ut.permission.DEVICE_STATE">
+            <intent-filter>
+                <action android:name="UT.FoundIt"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.taobao.agoo.RegistrationReceiver" android:process=":notify">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_REMOVED"/>
+                <data android:scheme="package"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.taobao.agoo.PushServiceReceiver" android:process=":notify">
+            <intent-filter>
+                <action android:name="org.agoo.android.intent.action.RECEIVE"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.alibaba.intl.android.apps.poseidon.intent.action.COMMAND"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="org.agoo.android.intent.action.RE_ELECTION_V2"/>
+            </intent-filter>
+        </receiver>
+        <service android:exported="true" android:name="com.taobao.agoo.PushService" android:process=":push">
+            <intent-filter>
+                <action android:name="com.alibaba.intl.android.apps.poseidon.intent.action.START"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.alibaba.intl.android.apps.poseidon.intent.action.COCKROACH"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="org.agoo.android.intent.action.PING"/>
+            </intent-filter>
+        </service>
+        <service android:exported="true" android:name="org.android.agoo.service.ElectionService" android:process=":push">
+            <intent-filter>
+                <action android:name="org.agoo.android.intent.action.ELECTION_V2"/>
+            </intent-filter>
+        </service>
+        <service android:name=".TaobaoIntentService" android:process=":notify"/>
+        <service android:name="com.taobao.gcm.GCMIntentService"/>
+        <receiver android:name="com.taobao.gcm.GCMBroadcastReceiver" android:permission="com.google.android.c2dm.permission.SEND">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE"/>
+                <action android:name="com.google.android.c2dm.intent.REGISTRATION"/>
+                <category android:name="com.taobao.taobao"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.taobao.taobao.intent.action.COMMAND"/>
+            </intent-filter>
+        </receiver>
+        <service android:name="com.taobao.statistic.module.data.Yolanda" android:process=":utremote"/>
+        <service android:exported="false" android:name="com.alibaba.mobileim.channel.service.InetIOService"/>
+        <provider android:authorities="com.alibaba.intl.android.apps.poseidon.provider" android:exported="false" android:name="com.alibaba.intl.android.apps.poseidon.provider.AppConfigContentProvider" android:permission="com.alibaba.intl.permission.AGOO_PUSH_SETTING"/>
+    </application>
+</manifest>

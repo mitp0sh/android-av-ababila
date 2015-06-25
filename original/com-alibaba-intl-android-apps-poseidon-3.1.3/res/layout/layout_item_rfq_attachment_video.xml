@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="@dimen/rfq_attchment_item_size" android:layout_height="@dimen/rfq_attchment_item_size"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:background="@null" android:layout_width="@dimen/rfq_attchment_item_size" android:layout_height="@dimen/rfq_attchment_item_size" android:layout_centerInParent="true">
+        <com.alibaba.intl.android.picture.widget.LoadableImageView android:id="@id/id_item_attachment_image" android:background="@null" android:layout_width="@dimen/rfq_attchment_item_image_size" android:layout_height="@dimen/rfq_attchment_item_image_size" android:layout_margin="@dimen/rfq_attchment_item_image_margin" android:src="@drawable/bg_rfq_attach_image" android:scaleType="centerCrop" android:layout_centerInParent="true" android:contentDescription="@null" />
+        <ImageView android:id="@id/id_item_attachment_delete" android:layout_width="@dimen/rfq_attchment_item_clear_size" android:layout_height="@dimen/rfq_attchment_item_clear_size" android:src="@drawable/ic_rfq_post_close" android:layout_alignParentRight="true" android:contentDescription="@null" />
+        <TextView android:textColor="@color/white" android:gravity="center_vertical" android:id="@id/id_item_attachment_length" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="20''" android:drawableLeft="@drawable/ic_rfq_post_video_play" android:drawablePadding="5.0dip" android:layout_centerInParent="true" />
+        <ProgressBar android:id="@id/id_item_attachment_progressbar" android:layout_width="fill_parent" android:layout_height="3.0dip" android:layout_marginLeft="14.0dip" android:layout_marginTop="@dimen/rfq_attchment_item_image_size" android:layout_marginRight="14.0dip" android:indeterminate="false" android:indeterminateDrawable="@drawable/rfq_post_upload_progressbar" android:progressDrawable="@drawable/rfq_post_upload_progressbar" style="@android:style/Widget.ProgressBar.Horizontal" />
+    </RelativeLayout>
+</RelativeLayout>

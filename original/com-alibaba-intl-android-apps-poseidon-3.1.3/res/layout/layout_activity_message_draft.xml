@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ListView android:id="@id/id_list_activity_message_draft" android:layout_width="fill_parent" android:layout_height="fill_parent" android:cacheColorHint="#00000000" android:divider="@drawable/line_h_grey" android:dividerHeight="0.5dip" />
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/id_empty_group_activity_message_draft" android:paddingBottom="40.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip">
+        <TextView android:textSize="20.0sp" android:textStyle="bold" android:textColor="@color/color_value_3" android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/str_message_draft_none" android:drawableTop="@drawable/ic_nomail" android:drawablePadding="30.0dip" />
+        <TextView android:textSize="14.0sp" android:textColor="#ff666666" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="@string/str_message_draft_none_tips" />
+    </LinearLayout>
+</RelativeLayout>

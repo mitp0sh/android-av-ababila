@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.alibaba.intl.android.bombanimation.ArcLayout android:id="@id/item_layout" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_centerInParent="true" custom:fromDegrees="270.0" custom:toDegrees="360.0" custom:childSize="66.0px" xmlns:custom="http://schemas.android.com/apk/res-auto" />
+</merge>

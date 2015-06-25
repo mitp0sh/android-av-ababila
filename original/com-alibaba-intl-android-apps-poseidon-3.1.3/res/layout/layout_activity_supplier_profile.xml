@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/bg_windows_screen" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ListView android:id="@id/id_list_activity_supplier_profile" android:layout_width="fill_parent" android:layout_height="0.0dip" android:cacheColorHint="#00000000" android:divider="@drawable/line_p4p_split_repeat" android:dividerHeight="0.5dip" android:layout_weight="1.0" />
+    <com.alibaba.intl.android.apps.poseidon.ui.control.CtrlFooterActionBar android:id="@id/id_footer_action_bar" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+</LinearLayout>

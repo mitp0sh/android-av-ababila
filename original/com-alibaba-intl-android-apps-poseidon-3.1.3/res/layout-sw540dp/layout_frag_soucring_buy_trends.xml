@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:paddingBottom="48.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="16.0sp" android:textColor="@color/color_value_3" android:padding="8.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:text="@string/str_sourcing_quotation_supplier_count_title" />
+    <LinearLayout android:orientation="horizontal" android:paddingTop="16.0dip" android:paddingBottom="16.0dip" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="2.0">
+        <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <com.alibaba.intl.android.apps.poseidon.override.AutoIncreaseNumberTextView android:textSize="@dimen/frag_sourcing_buy_trends_supplier_text_size" android:textColor="@color/orange" android:gravity="center" android:id="@id/id_text_suppliers_frag_sourcing_buying_trends" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="0" />
+            <TextView android:textSize="@dimen/frag_sourcing_buy_trends_supplier_desc_size" android:textColor="@color/color_value_9" android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/str_sourcing_suppliers" />
+        </LinearLayout>
+        <View style="@style/common_divider_vertical" />
+        <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <com.alibaba.intl.android.apps.poseidon.override.AutoIncreaseNumberTextView android:textSize="@dimen/frag_sourcing_buy_trends_supplier_text_size" android:textColor="@color/orange" android:gravity="center" android:id="@id/id_text_quotations_frag_sourcing_buying_trends" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="0" />
+            <TextView android:textSize="@dimen/frag_sourcing_buy_trends_supplier_desc_size" android:textColor="@color/color_value_9" android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/str_sourcing_quotations" />
+        </LinearLayout>
+    </LinearLayout>
+    <View style="@style/common_divider" />
+    <com.alibaba.intl.android.apps.poseidon.override.AutoViewSwitcher android:id="@id/id_view_switcher_frag_sourcing_buying_trends" android:layout_width="fill_parent" android:layout_height="0.0dip" android:inAnimation="@anim/anim_switcher_bottom_in" android:outAnimation="@anim/anim_switcher_top_out" android:layout_weight="1.0" />
+    <com.alibaba.intl.android.picture.widget.LoadableImageView android:id="@id/id_image_success_story_frag_sourcing_buying_trends" android:layout_width="fill_parent" android:layout_height="wrap_content" android:scaleType="fitXY" android:contentDescription="@null" />
+</LinearLayout>

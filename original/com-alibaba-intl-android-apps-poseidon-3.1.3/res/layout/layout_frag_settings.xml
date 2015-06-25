@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/bg_product_screen" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:background="@drawable/bg_product_screen" android:layout_width="fill_parent" android:layout_height="8.0dip" android:contentDescription="@string/content_desc_null" />
+    <ImageView android:background="@drawable/line_h_grey" android:layout_width="fill_parent" android:layout_height="0.5dip" android:contentDescription="@string/content_desc_null" />
+    <LinearLayout android:gravity="center_vertical" android:id="@id/id_ll_notification" android:background="#ffffffff" android:padding="10.0dip" android:clickable="true" android:layout_width="fill_parent" android:layout_height="56.0dip">
+        <TextView android:textSize="15.0sp" android:textColor="@color/color_value_6" android:gravity="center_vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:text="@string/str_title_notifications" android:singleLine="true" android:drawableRight="@drawable/ic_triangle" android:layout_weight="1.0" />
+    </LinearLayout>
+    <ImageView android:background="@drawable/line_h_grey" android:layout_width="fill_parent" android:layout_height="0.5dip" android:contentDescription="@string/content_desc_null" />
+    <LinearLayout android:gravity="center_vertical" android:id="@id/id_ll_contact_us" android:background="#ffffffff" android:padding="10.0dip" android:clickable="true" android:layout_width="fill_parent" android:layout_height="56.0dip">
+        <TextView android:textSize="15.0sp" android:textColor="@color/color_value_6" android:gravity="center_vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:text="@string/str_title_contact_us" android:singleLine="true" android:drawableRight="@drawable/ic_triangle" android:layout_weight="1.0" />
+    </LinearLayout>
+    <ImageView android:background="@drawable/line_h_grey" android:layout_width="fill_parent" android:layout_height="0.5dip" android:contentDescription="@string/content_desc_null" />
+    <ImageView android:background="@drawable/bg_product_screen" android:layout_width="fill_parent" android:layout_height="8.0dip" android:contentDescription="@string/content_desc_null" />
+    <ImageView android:background="@drawable/line_h_grey" android:layout_width="fill_parent" android:layout_height="0.5dip" android:contentDescription="@string/content_desc_null" />
+    <LinearLayout android:gravity="center_vertical" android:id="@id/id_ll_about_us" android:background="#ffffffff" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="56.0dip">
+        <TextView android:textSize="15.0sp" android:textColor="@color/color_value_6" android:gravity="center_vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:text="@string/str_title_about_us" android:singleLine="true" android:drawableRight="@drawable/ic_triangle" android:layout_weight="1.0" />
+    </LinearLayout>
+    <ImageView android:background="@drawable/line_h_grey" android:layout_width="fill_parent" android:layout_height="0.5dip" android:contentDescription="@string/content_desc_null" />
+    <LinearLayout android:gravity="center_vertical" android:id="@id/id_ll_update" android:background="#ffffffff" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="56.0dip">
+        <TextView android:textSize="15.0sp" android:textColor="@color/color_value_6" android:gravity="center_vertical" android:id="@id/id_current_version" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:text="@string/str_update_setting" android:singleLine="true" android:layout_weight="1.0" />
+        <TextView android:textSize="14.0sp" android:textColor="@color/color_value_6" android:id="@id/id_update_current_version" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:text="@string/str_update_setting_check" android:singleLine="true" android:drawableRight="@drawable/ic_triangle" android:drawablePadding="8.0dip" />
+    </LinearLayout>
+    <ImageView android:background="@drawable/line_h_grey" android:layout_width="fill_parent" android:layout_height="0.5dip" android:contentDescription="@string/content_desc_null" />
+    <Button android:textSize="16.0sp" android:textColor="@color/color_value_3" android:id="@id/id_sign_out_frag_settings" android:background="@drawable/ma_button_selector" android:paddingLeft="20.0dip" android:paddingTop="10.0dip" android:paddingRight="20.0dip" android:paddingBottom="10.0dip" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="30.0dip" android:layout_marginRight="10.0dip" android:text="@string/str_sign_out" />
+</LinearLayout>

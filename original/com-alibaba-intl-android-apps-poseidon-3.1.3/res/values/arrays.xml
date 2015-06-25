@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="str_arr_names_launcher_categories_grid">
+        <item>Apparel</item>
+        <item>Automobiles &amp; Motorcycles</item>
+        <item>Consumer Electronics</item>
+        <item>Furniture</item>
+        <item>Gifts &amp; Crafts</item>
+        <item>Health &amp; Medical</item>
+        <item>Home &amp; Garden</item>
+        <item>Machinery</item>
+        <item>All Categories</item>
+    </string-array>
+    <string-array name="str_arr_ids_launcher_categories_grid">
+        <item>3</item>
+        <item>34</item>
+        <item>44</item>
+        <item>1503</item>
+        <item>17</item>
+        <item>16</item>
+        <item>15</item>
+        <item>9</item>
+        <item>0</item>
+    </string-array>
+    <string-array name="str_arr_quotation_post_payment_terms">
+        <item>T/T</item>
+        <item>L/C</item>
+        <item>D/P</item>
+        <item>Western Union</item>
+        <item>Money Garm</item>
+        <item>Credit Card</item>
+        <item>Money Order</item>
+        <item>Paypal</item>
+    </string-array>
+    <string-array name="str_arr_quotation_post_choice">
+        <item>Import Product/Quote Details</item>
+        <item>Complete Quotation Form</item>
+    </string-array>
+    <string-array name="str_arr_product_group">
+        <item>Recent Quotes</item>
+        <item>All Products</item>
+    </string-array>
+    <string-array name="str_arr_image_picker_choice">
+        <item>From Camera</item>
+        <item>From Gallery</item>
+    </string-array>
+    <string-array name="fileEndingImage">
+        <item>.png</item>
+        <item>.gif</item>
+        <item>.jpg</item>
+        <item>.jpeg</item>
+        <item>.bmp</item>
+    </string-array>
+    <string-array name="fileEndingAudio">
+        <item>.mp3</item>
+        <item>.wav</item>
+        <item>.ogg</item>
+        <item>.midi</item>
+    </string-array>
+    <string-array name="fileEndingVideo">
+        <item>.mp4</item>
+        <item>.rmvb</item>
+        <item>.avi</item>
+        <item>.flv</item>
+    </string-array>
+    <string-array name="fileEndingPackage">
+        <item>.jar</item>
+        <item>.zip</item>
+        <item>.rar</item>
+        <item>.gz</item>
+        <item>.apk</item>
+        <item>.img</item>
+    </string-array>
+    <string-array name="fileEndingWebText">
+        <item>.htm</item>
+        <item>.html</item>
+        <item>.php</item>
+        <item>.jsp</item>
+    </string-array>
+    <string-array name="fileEndingText">
+        <item>.txt</item>
+        <item>.java</item>
+        <item>.c</item>
+        <item>.cpp</item>
+        <item>.py</item>
+        <item>.xml</item>
+        <item>.json</item>
+        <item>.log</item>
+    </string-array>
+    <string-array name="fileEndingWord">
+        <item>.doc</item>
+        <item>.docx</item>
+    </string-array>
+    <string-array name="fileEndingExcel">
+        <item>.xls</item>
+        <item>.xlsx</item>
+    </string-array>
+    <string-array name="fileEndingPPT">
+        <item>.ppt</item>
+        <item>.pptx</item>
+    </string-array>
+    <string-array name="fileEndingPdf">
+        <item>.pdf</item>
+    </string-array>
+</resources>

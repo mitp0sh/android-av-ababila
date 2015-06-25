@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.alibaba.intl.android.graphics.resizelayout.ResizeScrollLayout android:id="@id/id_contianer_activity_quotation_form" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:background="#fff8f8f8" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="13.0sp" android:textColor="@color/color_value_6" android:gravity="center_vertical" android:layout_gravity="center_vertical" android:paddingLeft="8.0dip" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginTop="8.0dip" android:text="@string/str_rfq_quotation_form_name_hint" />
+        <View style="@style/common_divider" />
+        <EditText android:textSize="13.0sp" android:textColor="@color/color_value_3" android:textColorHint="@color/color_value_c" android:id="@id/id_name_activity_quotation_form" android:paddingLeft="8.0dip" android:singleLine="true" android:maxLength="128" android:digits="@string/str_edit_text_input_enter_digits" android:inputType="textMultiLine" style="@style/ios_edittext" />
+        <View style="@style/common_divider" />
+        <TextView android:textSize="13.0sp" android:textColor="@color/color_value_6" android:gravity="center_vertical" android:layout_gravity="center_vertical" android:paddingLeft="8.0dip" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginTop="8.0dip" android:text="@string/str_rfq_quotation_form_detail_hint" />
+        <View style="@style/common_divider" />
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <EditText android:textSize="13.0sp" android:textColor="@color/color_value_3" android:textColorHint="@color/color_value_c" android:gravity="center|left|top" android:id="@id/id_detail_activity_quotation_form" android:paddingLeft="8.0dip" android:paddingTop="2.0dip" android:paddingBottom="2.0dip" android:scrollbars="vertical" android:layout_height="wrap_content" android:minHeight="144.0dip" android:singleLine="false" android:maxLength="2000" android:digits="@string/str_edit_text_input_enter_digits" android:inputType="textMultiLine" style="@style/ios_edittext" />
+            <TextView android:textSize="12.0sp" android:textColor="@color/gray" android:id="@id/id_detail_over_activity_quotation_form" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="6.0dip" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" />
+        </RelativeLayout>
+        <View style="@style/common_divider" />
+        <FrameLayout android:id="@id/id_layout_frag_activity_quotation_form" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <View style="@style/common_divider" />
+        <TextView android:textSize="13.0sp" android:textColor="@color/color_value_6" android:gravity="center_vertical" android:layout_gravity="center_vertical" android:paddingLeft="8.0dip" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginTop="8.0dip" android:text="@string/str_rfq_quotation_form_shipping_terms_hint" />
+        <View style="@style/common_divider" />
+        <TextView android:textSize="13.0sp" android:textColor="@color/color_value_3" android:id="@id/id_text_shipping_activity_quotation_form" android:background="#ffefefef" android:paddingLeft="8.0dip" android:text="FOB" style="@style/ios_edittext" />
+        <View style="@style/common_divider" />
+        <TextView android:textSize="13.0sp" android:textColor="@color/color_value_6" android:gravity="center_vertical" android:layout_gravity="center_vertical" android:paddingLeft="8.0dip" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginTop="8.0dip" android:text="@string/str_rfq_quotation_form_port_hint" />
+        <View style="@style/common_divider" />
+        <EditText android:textSize="13.0sp" android:textColor="@color/color_value_3" android:textColorHint="@color/color_value_c" android:id="@id/id_edit_port_activity_quotation_form" android:paddingLeft="8.0dip" android:singleLine="false" android:maxLength="64" android:digits="@string/str_edit_text_input_enter_digits" android:inputType="textMultiLine" style="@style/ios_edittext" />
+        <View style="@style/common_divider" />
+        <TextView android:textSize="13.0sp" android:textColor="@color/color_value_6" android:gravity="center_vertical" android:layout_gravity="center_vertical" android:id="@id/id_text_price_unit_activity_quotation_form" android:paddingLeft="8.0dip" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginTop="8.0dip" android:text="@string/str_rfq_quotation_form_unit_price_hint" />
+        <View style="@style/common_divider" />
+        <LinearLayout android:orientation="horizontal" android:paddingLeft="8.0dip" style="@style/ios_layout">
+            <EditText android:textSize="13.0sp" android:textColor="@color/color_value_3" android:textColorHint="@color/color_value_c" android:id="@id/id_edit_unit_activity_quotation_form" android:paddingLeft="0.0dip" android:layout_width="0.0dip" android:singleLine="true" android:digits="@string/str_edit_number_input_enter_digits" android:layout_weight="1.0" android:inputType="numberDecimal" style="@style/ios_edittext" />
+            <TextView android:textSize="13.0sp" android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="/" />
+            <TextView android:textSize="13.0sp" android:textColor="@color/color_value_6" android:ellipsize="end" android:gravity="center_vertical" android:layout_gravity="center_vertical" android:id="@id/id_text_piece_action_activity_quotation_form" android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="@string/str_rfq_quotation_form_text_piece" android:singleLine="true" android:drawableRight="@drawable/ic_triangle" android:drawablePadding="6.0dip" android:layout_weight="1.0" />
+        </LinearLayout>
+        <View style="@style/common_divider" />
+        <TextView android:textSize="13.0sp" android:textColor="@color/color_value_6" android:gravity="center_vertical" android:layout_gravity="center_vertical" android:paddingLeft="8.0dip" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginTop="8.0dip" android:text="@string/str_rfq_quotation_form_quantity_base_hint" />
+        <View style="@style/common_divider" />
+        <LinearLayout android:orientation="horizontal" android:paddingLeft="8.0dip" style="@style/ios_layout">
+            <EditText android:textSize="13.0sp" android:textColor="@color/color_value_3" android:textColorHint="@color/color_value_c" android:gravity="center_vertical" android:id="@id/id_edit_quantity_activity_quotation_form" android:paddingLeft="0.0dip" android:layout_width="0.0dip" android:singleLine="true" android:maxLength="9" android:digits="@string/str_edit_number_input_enter_digits_positive" android:layout_weight="1.0" android:inputType="number" style="@style/ios_edittext" />
+            <TextView android:textSize="13.0sp" android:textColor="@color/color_value_6" android:gravity="center_vertical" android:layout_gravity="center_vertical" android:id="@id/id_text_piece_activity_quotation_form" android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="@string/str_rfq_quotation_form_text_piece" />
+        </LinearLayout>
+        <View style="@style/common_divider" />
+        <TextView android:textSize="13.0sp" android:textColor="@color/color_value_6" android:gravity="center_vertical" android:layout_gravity="center_vertical" android:paddingLeft="8.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:text="@string/str_rfq_quotation_form_payment_terms" />
+        <View style="@style/common_divider" />
+        <LinearLayout android:orientation="horizontal" android:id="@id/id_layout_payment_activity_quotation_form" android:paddingLeft="8.0dip" style="@style/ios_layout">
+            <TextView android:textSize="13.0sp" android:textColor="@color/color_value_3" android:gravity="center_vertical" android:layout_gravity="center_vertical" android:id="@id/id_text_payment_activity_quotation_form" android:paddingRight="10.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/str_rfq_quotation_form_text_tt" android:drawableRight="@drawable/ic_triangle" android:drawablePadding="6.0dip" />
+        </LinearLayout>
+        <View style="@style/common_divider" />
+        <TextView android:textSize="13.0sp" android:textColor="@color/color_value_6" android:gravity="center_vertical" android:layout_gravity="center_vertical" android:paddingLeft="8.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:text="@string/str_rfq_quotation_form_quantity_valid_hint" />
+        <View style="@style/common_divider" />
+        <LinearLayout android:orientation="horizontal" android:id="@id/id_layout_quantity_valid_activity_quotation_form" style="@style/ios_layout">
+            <TextView android:textSize="13.0sp" android:textColor="@color/color_value_3" android:gravity="center_vertical" android:layout_gravity="center_vertical" android:id="@id/id_text_date_activity_quotation_form" android:paddingRight="10.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:drawableRight="@drawable/ic_triangle" android:drawablePadding="6.0dip" />
+        </LinearLayout>
+        <View style="@style/common_divider" />
+        <View style="@style/common_blank" />
+        <View style="@style/common_divider" />
+        <EditText android:textSize="13.0sp" android:textColor="@color/color_value_3" android:textColorHint="@color/color_value_c" android:gravity="center|left|top" android:id="@id/id_edit_note_activity_quotation_form" android:paddingLeft="8.0dip" android:paddingTop="2.0dip" android:paddingBottom="2.0dip" android:scrollbars="vertical" android:layout_height="wrap_content" android:minHeight="144.0dip" android:hint="@string/str_rfq_quotation_form_message" android:singleLine="false" android:maxLength="2000" android:digits="@string/str_edit_text_input_enter_digits" android:inputType="textMultiLine" style="@style/ios_edittext" />
+        <View style="@style/common_divider" />
+        <Button android:id="@id/id_left_btn_ctrl_footer_action_bar" android:background="@drawable/button_quotation_footer_left" android:paddingTop="8.0dip" android:paddingBottom="8.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="10.0dip" style="@style/AliButtonTextAppearance.White" />
+    </LinearLayout>
+</com.alibaba.intl.android.graphics.resizelayout.ResizeScrollLayout>

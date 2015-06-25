@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:layout_width="wrap_content" android:text="@string/str_register_phone_number_prefix" style="@style/ios_edittext" />
+        <EditText android:textStyle="normal" android:id="@id/id_edit_phone_number_frag_oauth_register" android:hint="@string/str_register_phone_number_hint" android:singleLine="true" android:inputType="phone" style="@style/ios_edittext" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:id="@id/id_layout_verify_code_frag_oauth_register" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <View android:id="@id/id_divider_frag_oauth_register" style="@style/common_divider_broken" />
+            <Button android:id="@id/id_btn_resend_code_frag_oauth_register" android:background="@drawable/button_register_green" android:paddingLeft="12.0dip" android:paddingRight="12.0dip" android:layout_width="wrap_content" android:layout_height="48.0dip" android:text="@string/str_resend_verify_code" android:layout_below="@id/id_divider_frag_oauth_register" android:layout_alignParentRight="true" style="@style/AliButtonTextAppearance.White" />
+            <EditText android:textStyle="normal" android:id="@id/id_edit_verify_code_frag_oauth_register" android:hint="@string/str_register_verify_code_hint" android:singleLine="true" android:layout_toLeftOf="@id/id_btn_resend_code_frag_oauth_register" android:layout_below="@id/id_divider_frag_oauth_register" android:inputType="number" style="@style/ios_edittext" />
+            <View android:layout_below="@id/id_edit_verify_code_frag_oauth_register" style="@style/common_divider" />
+        </RelativeLayout>
+        <Button android:id="@id/id_btn_send_code_frag_oauth_register" android:background="@drawable/button_register_green" android:paddingLeft="20.0dip" android:paddingTop="8.0dip" android:paddingRight="20.0dip" android:paddingBottom="8.0dip" android:layout_width="fill_parent" android:layout_height="48.0dip" android:text="@string/str_send_verify" style="@style/AliButtonTextAppearance.White" />
+    </LinearLayout>
+    <Button android:id="@id/id_btn_next_frag_oauth_register" android:background="@drawable/button_detail_contact" android:paddingLeft="20.0dip" android:paddingTop="8.0dip" android:paddingRight="20.0dip" android:paddingBottom="8.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_margin_left" android:layout_marginTop="20.0dip" android:layout_marginRight="@dimen/dimen_margin_right" android:text="@string/str_register_mainland_next_step" style="@style/AliButtonTextAppearance.White" />
+</LinearLayout>

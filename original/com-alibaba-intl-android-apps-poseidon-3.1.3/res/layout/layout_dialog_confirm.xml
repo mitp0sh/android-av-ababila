@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="24.0dip" android:layout_marginRight="24.0dip" android:baselineAligned="false"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="18.0sp" android:textColor="@color/holo_blue_light" android:id="@id/id_title_dialog_confirm" android:background="@drawable/bg_tab_indicator_selected" android:paddingLeft="10.0dip" android:paddingTop="15.0dip" android:paddingRight="10.0dip" android:paddingBottom="15.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/update_dialog_new_version_found" />
+    <TextView android:textSize="16.0sp" android:textColor="@color/color_value_3" android:id="@id/id_content_dialog_confirm" android:background="@color/white" android:paddingLeft="12.0dip" android:paddingTop="12.0dip" android:paddingRight="12.0dip" android:paddingBottom="12.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/str_content_hint" />
+    <View android:background="@color/color_value_c" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+    <LinearLayout android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <Button android:textSize="16.0sp" android:textColor="@color/color_value_3" android:id="@id/id_button_cancel_dialog_confirm" android:background="@drawable/button_color_white_blue" android:paddingTop="12.0dip" android:paddingBottom="12.0dip" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/str_cancel" android:layout_weight="1.0" />
+        <View android:background="@color/color_value_c" android:layout_width="0.5dip" android:layout_height="fill_parent" />
+        <Button android:textSize="16.0sp" android:textColor="@color/color_value_3" android:id="@id/id_button_confirm_dialog_confirm" android:background="@drawable/button_color_white_blue" android:paddingTop="12.0dip" android:paddingBottom="12.0dip" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/str_confirm" android:layout_weight="1.0" />
+    </LinearLayout>
+    <TextView android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="0.39999998dip" android:text="                                                                      " android:singleLine="true" android:textIsSelectable="false" />
+</LinearLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:visibility="gone" style="@style/common_blank" />
+    <View style="@style/common_divider" />
+    <TextView android:layout_gravity="center_vertical" android:id="@id/id_text_country_act_register" android:visibility="gone" android:drawableRight="@drawable/ic_triangle" style="@style/ios_edittext" />
+    <View android:visibility="gone" style="@style/common_divider_broken" />
+    <FrameLayout android:id="@id/id_register_container" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</LinearLayout>

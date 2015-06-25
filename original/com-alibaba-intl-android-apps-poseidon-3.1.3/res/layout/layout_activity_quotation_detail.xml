@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/color_value_e" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ListView android:id="@id/id_list_activity_quotation_detail" android:background="@color/white" android:clickable="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="1.0dip" android:listSelector="@android:color/transparent" android:cacheColorHint="#00000000" android:divider="@android:color/darker_gray" android:dividerHeight="0.5dip" />
+</LinearLayout>

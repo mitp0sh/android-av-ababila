@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip">
+        <ImageView android:id="@id/id_camera_flashbulb" android:background="@drawable/light" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_alignParentLeft="true" />
+        <ImageView android:id="@id/id_prepositive_switch_postpositive" android:background="@drawable/change_camera" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="20.0dip" android:layout_alignParentRight="true" />
+    </RelativeLayout>
+    <SurfaceView android:id="@id/id_camera_button" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <RelativeLayout android:orientation="horizontal" android:id="@id/container" android:layout_width="fill_parent" android:layout_height="50.0dip" android:layout_marginBottom="10.0dip" android:layout_alignParentBottom="true">
+        <Button android:orientation="horizontal" android:id="@id/id_camera_back" android:background="@drawable/button_back_arrow" android:layout_width="70.0dip" android:layout_height="40.0dip" android:layout_marginLeft="10.0dip" />
+        <TextView android:id="@id/finishedCard" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0" android:layout_centerHorizontal="true" />
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="/" />
+        <TextView android:id="@id/uploadCard" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="3" />
+        <Button android:id="@id/caBtn" android:background="@drawable/atm_expand_bg_normal" android:layout_width="70.0dip" android:layout_height="40.0dip" android:layout_marginRight="40.0dip" android:layout_alignParentRight="true" />
+    </RelativeLayout>
+</RelativeLayout>

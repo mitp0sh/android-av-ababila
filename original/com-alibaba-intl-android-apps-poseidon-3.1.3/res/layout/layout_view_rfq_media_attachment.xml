@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:visibility="gone" android:layout_height="wrap_content" style="@style/ios_layout"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <GridView android:gravity="left" android:id="@id/id_grid_attach_image_view_rfq" android:padding="4.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:listSelector="@null" android:horizontalSpacing="2.0dip" android:verticalSpacing="2.0dip" android:numColumns="4" />
+    <GridView android:gravity="left" android:id="@id/id_grid_attach_video_view_rfq" android:padding="4.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:listSelector="@null" android:horizontalSpacing="2.0dip" android:verticalSpacing="2.0dip" android:numColumns="4" />
+    <GridView android:gravity="left" android:id="@id/id_grid_attach_audio_view_rfq" android:padding="4.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:listSelector="@null" android:horizontalSpacing="2.0dip" android:verticalSpacing="2.0dip" android:numColumns="4" />
+</LinearLayout>

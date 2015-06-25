@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/id_main_fragment_content" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <com.alibaba.intl.android.apps.poseidon.override.MainFragmentTabHost android:id="@id/id_main_tab_host" android:background="@drawable/ic_bottom_action_bar_bg" android:clickable="true" android:layout_width="fill_parent" android:layout_height="48.0dip" android:layout_alignParentBottom="true">
+        <FrameLayout android:id="@id/id_main_tab_content" android:layout_width="0.0dip" android:layout_height="0.0dip" android:layout_weight="0.0" />
+    </com.alibaba.intl.android.apps.poseidon.override.MainFragmentTabHost>
+</RelativeLayout>

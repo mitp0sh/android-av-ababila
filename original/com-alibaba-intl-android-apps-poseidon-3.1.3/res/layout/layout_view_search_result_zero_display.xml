@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:paddingLeft="12.0dip" android:paddingRight="12.0dip" android:paddingBottom="40.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="16.0sp" android:textColor="@color/color_value_3" android:id="@id/id_matched_view_search_zero" android:padding="4.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/str_search_result_zero_matches" android:drawableTop="@drawable/ic_search_result_zero" android:drawablePadding="30.0dip" />
+    <TextView android:textSize="16.0sp" android:textColor="@color/color_value_3" android:id="@id/id_wants_view_search_zero" android:padding="4.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/str_search_result_zero_wants" />
+    <TextView android:textSize="17.0sp" android:textColor="@color/color_value_blue" android:id="@id/id_rfq_post_view_search_zero" android:padding="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/str_rfq_quotation_post_rfq" />
+</LinearLayout>

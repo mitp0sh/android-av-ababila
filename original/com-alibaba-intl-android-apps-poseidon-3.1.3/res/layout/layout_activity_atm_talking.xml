@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="@color/common_bg_color" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/talking_main_layout" android:background="@color/common_bg_color" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.alibaba.intl.android.graphics.pulltorefresh.PullToRefreshListView android:id="@id/talk_history_listView" android:layout_width="fill_parent" android:layout_height="fill_parent" android:listSelector="#00000000" android:scrollingCache="false" android:transcriptMode="normal" android:cacheColorHint="#00000000" android:divider="@null" android:layout_above="@id/text_line" android:footerDividersEnabled="false" />
+        <TextView android:id="@id/text_line" android:background="#ffdedede" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_above="@id/reply_collect" />
+        <RelativeLayout android:id="@id/reply_collect" android:background="#ffdfdddd" android:paddingLeft="8.0dip" android:paddingTop="3.0dip" android:paddingBottom="3.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_above="@id/chat_menu">
+            <CheckBox android:id="@id/chat_expand" style="@style/chatting_detail_chat_expand_style" />
+            <Button android:id="@id/chat_send" style="@style/chatting_detail_chat_send_style" />
+            <EditText android:id="@id/chat_inputtext" android:layout_toLeftOf="@id/chat_send" android:layout_toRightOf="@id/chat_expand" style="@style/chatting_detail_input_text_style">
+                <requestFocus />
+            </EditText>
+        </RelativeLayout>
+        <LinearLayout android:orientation="horizontal" android:id="@id/chat_menu" android:background="@color/common_def_gray" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_above="@id/text_bottom_dummy">
+            <RadioGroup android:orientation="horizontal" android:visibility="visible" android:layout_width="0.0dip" android:layout_height="@dimen/atm_talking_tool_bar_tab_height" android:layout_weight="2.0">
+                <Button android:id="@id/chat_sel_album" android:background="@drawable/atm_chatting_detail_button" android:height="@dimen/atm_talking_tool_bar_tab_height" android:drawableTop="@drawable/atm_chatting_detail_select_album" style="@style/chatting_detail_radio_button_style" />
+                <Button android:id="@id/chat_sel_camera" android:background="@drawable/atm_chatting_detail_button" android:height="@dimen/atm_talking_tool_bar_tab_height" android:drawableTop="@drawable/atm_chatting_detail_select_camera" style="@style/chatting_detail_radio_button_style" />
+            </RadioGroup>
+        </LinearLayout>
+        <TextView android:id="@id/text_bottom_dummy" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+    <Button android:layout_gravity="center|top" android:id="@id/navigate_to_last_message" android:background="@color/white" android:padding="0.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="45.0dip" />
+</FrameLayout>

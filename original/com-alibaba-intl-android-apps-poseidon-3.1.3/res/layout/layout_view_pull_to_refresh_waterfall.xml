@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.alibaba.intl.android.picture.widget.waterfall.WaterfallScrollView android:id="@id/id_waterfall_scroll" android:background="@color/backgroud_color" android:scrollbars="none" android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:wvideo="http://schemas.android.com/apk/res-auto">
+    <com.alibaba.intl.android.picture.widget.waterfall.WaterfallGridView android:id="@id/id_water_fall_gridview" android:background="#fff1f1f1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:numColumns="@integer/grid_cols" />
+</com.alibaba.intl.android.picture.widget.waterfall.WaterfallScrollView>

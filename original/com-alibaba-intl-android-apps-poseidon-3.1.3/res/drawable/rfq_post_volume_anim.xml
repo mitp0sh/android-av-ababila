@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list android:visible="true" android:oneshot="false"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:duration="1" android:drawable="@drawable/ic_rfq_post_volume_none" />
+    <item android:duration="500" android:drawable="@drawable/ic_rfq_post_volume_one" />
+    <item android:duration="500" android:drawable="@drawable/ic_rfq_post_volume_two" />
+    <item android:duration="500" android:drawable="@drawable/ic_rfq_post_volume_three" />
+</animation-list>

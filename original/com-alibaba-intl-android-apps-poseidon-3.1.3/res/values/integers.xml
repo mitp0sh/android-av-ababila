@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer name="default_circle_indicator_orientation">0</integer>
+    <integer name="default_title_indicator_footer_indicator_style">2</integer>
+    <integer name="default_title_indicator_line_position">0</integer>
+    <integer name="default_underline_indicator_fade_delay">300</integer>
+    <integer name="default_underline_indicator_fade_length">400</integer>
+    <integer name="anim_speed">600</integer>
+    <integer name="max_chatting_word_length">1024</integer>
+    <integer name="grid_cols">2</integer>
+    <integer name="grid_desc_max_lines">2</integer>
+    <integer name="grid_pic_desc_max_lines">7</integer>
+</resources>

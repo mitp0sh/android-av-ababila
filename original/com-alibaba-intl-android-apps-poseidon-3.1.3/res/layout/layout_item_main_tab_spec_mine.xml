@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:paddingTop="6.0dip" android:paddingBottom="2.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/id_main_tab_spec_icon" android:layout_width="24.0dip" android:layout_height="24.0dip" android:src="@drawable/ic_mine_selected" android:layout_centerHorizontal="true" />
+    <TextView android:textSize="10.0sp" android:textColor="@drawable/sel_tab_item_text" android:id="@id/id_main_tab_spec_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="-2.0dip" android:layout_below="@id/id_main_tab_spec_icon" android:layout_centerHorizontal="true" />
+    <ImageView android:id="@id/id_main_tab_spec_dot" android:visibility="invisible" android:layout_width="8.0dip" android:layout_height="8.0dip" android:layout_marginRight="-5.0dip" android:src="@drawable/ic_dot_orange" android:layout_alignTop="@id/id_main_tab_spec_icon" android:layout_alignRight="@id/id_main_tab_spec_icon" />
+</RelativeLayout>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:paddingLeft="10.0dip" android:paddingTop="10.0dip" android:paddingRight="10.0dip" android:paddingBottom="20.0dip" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent" android:baselineAligned="false"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="18.0sp" android:textStyle="bold" android:textColor="@color/color_value_blue" android:id="@id/id_title_item_company_profile" android:layout_width="fill_parent" android:layout_height="wrap_content" android:singleLine="false" android:textIsSelectable="false" />
+    <TextView android:textSize="14.0sp" android:textColor="@color/color_value_9" android:id="@id/id_value_item_company_profile" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3.0dip" android:textIsSelectable="false" />
+    <TableLayout android:id="@id/id_table_item_company_profile" android:layout_width="fill_parent" android:layout_height="wrap_content" android:shrinkColumns="1" />
+</LinearLayout>

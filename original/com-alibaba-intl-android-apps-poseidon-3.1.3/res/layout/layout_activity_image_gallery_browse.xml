@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/layout_root_view" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.alibaba.intl.android.picture.widget.GestureViewPager android:id="@id/pager" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <RelativeLayout android:gravity="center|left" android:orientation="horizontal" android:id="@id/id_image_titlebar" android:background="@drawable/bg_title_action_bar" android:clickable="false" android:layout_width="fill_parent" android:layout_height="48.0dip">
+        <View android:id="@id/id_go_back" android:background="@drawable/button_color_translate_blue" android:clickable="true" android:layout_width="wrap_content" android:layout_height="48.0dip" android:layout_marginLeft="-2.0dip" android:layout_marginRight="-10.0dip" android:layout_alignLeft="@id/id_back_ctrl_header_action_bar" android:layout_alignRight="@id/id_back_ctrl_header_action_bar" />
+        <ImageButton android:textColor="@color/color_title" android:gravity="center" android:id="@id/id_back_ctrl_header_action_bar" android:background="@null" android:clickable="false" android:layout_width="wrap_content" android:layout_height="48.0dip" android:layout_marginLeft="2.0dip" android:src="@drawable/button_back_arrow" android:layout_centerVertical="true" />
+        <TextView android:textSize="18.0sp" android:textColor="@color/color_title" android:id="@id/id_image_count" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:text="@string/str_app_label" android:layout_toRightOf="@id/id_back_ctrl_header_action_bar" android:layout_centerVertical="true" />
+        <ImageButton android:id="@id/id_delete_ctrl_header_action_bar" android:background="@null" android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="0.0dip" android:src="@drawable/ic_delete" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+</RelativeLayout>

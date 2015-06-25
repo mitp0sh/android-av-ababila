@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/id_container_activity_guider" android:clipChildren="false" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.alibaba.intl.android.apps.poseidon.override.TransView android:id="@id/id_trans_view_activity_guide" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <android.support.v4.view.ViewPager android:id="@id/id_view_pager_activity_guider" android:fadingEdge="none" android:clipChildren="false" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="@dimen/guider_image_margin_top" android:layout_centerHorizontal="true" android:overScrollMode="never" />
+    <com.alibaba.intl.android.graphics.pageindicator.CustomCirclePageIndicator android:id="@id/id_pager_indicator_activity_guider" android:padding="8.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="20.0dip" android:layout_alignParentBottom="true" />
+    <ImageView android:id="@id/id_image_enter_activity_guider" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="60.0dip" android:src="@drawable/guider_enter" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" android:contentDescription="@null" />
+</RelativeLayout>

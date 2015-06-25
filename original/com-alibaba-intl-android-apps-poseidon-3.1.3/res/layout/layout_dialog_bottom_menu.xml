@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/id_container_dialog_bottom_menu" android:paddingLeft="11.0dip" android:paddingRight="11.0dip" android:paddingBottom="11.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="15.0sp" android:textColor="#ff0077ff" android:gravity="center" android:id="@id/id_cancel_dialog_bottom_menu" android:background="@drawable/dialog_list_item_single" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="12.0dip" android:text="@string/str_cancel" android:layout_alignParentBottom="true" />
+    <ListView android:id="@id/id_listview_dialog_bottom_menu" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_above="@id/id_cancel_dialog_bottom_menu" />
+</RelativeLayout>

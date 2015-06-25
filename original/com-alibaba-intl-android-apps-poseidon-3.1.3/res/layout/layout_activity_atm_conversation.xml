@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@drawable/bg_windows_screen" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:alibaba="http://schemas.android.com/apk/res/com.alibaba.intl.android.apps.poseidon">
+    <com.alibaba.intl.android.graphics.pulltorefresh.PullToRefreshListView android:id="@id/id_list_act_atm_conversation" android:background="@drawable/bg_windows_screen" android:layout_width="fill_parent" android:layout_height="fill_parent" android:divider="@drawable/line_h_grey" android:dividerHeight="0.5dip" alibaba:ptrAdapterViewBackground="@color/white" alibaba:ptrHeaderBackground="@color/color_value_f8" alibaba:ptrHeaderTextColor="@color/color_value_9" alibaba:ptrHeaderSubTextColor="@color/color_value_9" alibaba:ptrShowIndicator="false" />
+    <TextView android:textSize="14.0sp" android:gravity="center" android:id="@id/empty_tip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/no_conversation" />
+</RelativeLayout>

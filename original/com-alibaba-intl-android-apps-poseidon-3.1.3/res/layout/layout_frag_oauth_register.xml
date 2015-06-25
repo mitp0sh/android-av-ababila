@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="horizontal" style="@style/ios_layout">
+            <EditText android:id="@id/id_edit_firstname_frag_oauth_register" android:paddingLeft="0.0dip" android:layout_width="0.0dip" android:hint="@string/str_first_name_hint" android:singleLine="true" android:layout_weight="1.0" android:inputType="text" style="@style/ios_edittext" />
+            <View style="@style/common_divider_vertical" />
+            <EditText android:id="@id/id_edit_lastname_frag_oauth_register" android:layout_width="0.0dip" android:hint="@string/str_last_name_hint" android:singleLine="true" android:layout_weight="1.0" android:inputType="text" style="@style/ios_edittext" />
+        </LinearLayout>
+        <View style="@style/common_divider" />
+        <EditText android:textStyle="normal" android:id="@id/id_edit_company_name_frag_oauth_register" android:hint="@string/str_company_name_hint" android:singleLine="true" style="@style/ios_edittext" />
+        <View style="@style/common_divider" />
+        <EditText android:textStyle="normal" android:id="@id/id_edit_email_frag_oauth_register" android:hint="@string/str_email_hint" android:singleLine="true" style="@style/ios_edittext" />
+        <View style="@style/common_divider" />
+        <EditText android:textStyle="normal" android:id="@id/id_edit_password_frag_oauth_register" android:hint="@string/str_create_password_hint" android:password="true" android:singleLine="true" style="@style/ios_edittext" />
+        <View style="@style/common_divider" />
+        <View style="@style/common_blank" />
+        <TextView android:textSize="12.0sp" android:textColor="@android:color/secondary_text_dark" android:background="@null" android:text="@string/str_register_license" style="@style/ios_edittext" />
+        <Button android:id="@id/id_btn_submit_frag_oauth_register" android:background="@drawable/button_detail_contact" android:paddingLeft="20.0dip" android:paddingTop="8.0dip" android:paddingRight="20.0dip" android:paddingBottom="8.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_margin_left" android:layout_marginTop="4.0dip" android:layout_marginRight="@dimen/dimen_margin_right" android:text="@string/str_register_submit" style="@style/AliButtonTextAppearance.White" />
+    </LinearLayout>
+</ScrollView>

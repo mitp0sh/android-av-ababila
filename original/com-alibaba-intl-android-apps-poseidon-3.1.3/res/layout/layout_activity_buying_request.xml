@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="@drawable/bg_windows_screen" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:alibaba="http://schemas.android.com/apk/res/com.alibaba.intl.android.apps.poseidon">
+    <com.alibaba.intl.android.graphics.pulltorefresh.PullToRefreshListView android:id="@id/id_list_activity_buying_request" android:layout_width="fill_parent" android:layout_height="fill_parent" android:cacheColorHint="#00000000" android:divider="@drawable/line_h_grey" android:dividerHeight="0.5dip" android:footerDividersEnabled="false" alibaba:ptrAdapterViewBackground="@color/white" alibaba:ptrHeaderBackground="@color/color_value_f8" alibaba:ptrHeaderTextColor="@color/color_value_9" alibaba:ptrHeaderSubTextColor="@color/color_value_9" alibaba:ptrShowIndicator="false" />
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/id_empty_group_activity_buying_request" android:paddingBottom="40.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip">
+        <TextView android:textSize="20.0sp" android:textColor="@color/color_value_3" android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/str_no_favorite_added" android:drawableTop="@drawable/ic_no_favorites" android:drawablePadding="30.0dip" />
+        <TextView android:textSize="13.0sp" android:textColor="@color/color_value_6" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/str_start_add_products" />
+    </LinearLayout>
+</RelativeLayout>

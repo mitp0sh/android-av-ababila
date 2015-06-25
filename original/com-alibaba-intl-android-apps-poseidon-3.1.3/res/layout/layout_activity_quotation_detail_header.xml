@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/color_value_e" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/id_layout_title_quotation_detail" android:background="@color/white" android:paddingLeft="10.0dip" android:paddingTop="10.0dip" android:paddingRight="10.0dip" android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="16.0sp" android:textColor="@color/color_value_9" android:id="@id/id_title_quotation_detail" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/str_quotation_list_detail_title" />
+        <TextView android:textSize="16.0sp" android:textColor="@color/color_value_3" android:ellipsize="end" android:id="@id/id_content_quotation_detail" android:paddingRight="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:layout_toLeftOf="@id/id_image_quotation_detail" android:layout_toRightOf="@id/id_title_quotation_detail" />
+        <ImageView android:id="@id/id_image_quotation_detail" android:layout_width="35.0dip" android:layout_height="wrap_content" android:src="@drawable/ic_triangle" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:contentDescription="@string/content_desc_null" />
+    </RelativeLayout>
+    <TextView android:textSize="16.0sp" android:textColor="@color/color_value_6" android:ellipsize="end" android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" android:layout_marginBottom="5.0dip" android:text="@string/str_quotation_list_my_quotation" android:maxLines="1" />
+    <TableLayout android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content" android:stretchColumns="1">
+        <TableRow android:background="@color/white">
+            <TextView android:textSize="15.0sp" android:textColor="@color/color_value_9" android:paddingRight="6.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:layout_marginTop="4.0dip" android:text="@string/str_quotation_list_quotation_status" android:textIsSelectable="false" />
+            <TextView android:textSize="15.0sp" android:textColor="@color/color_value_3" android:id="@id/id_quotation_status_quotation_detail" android:paddingLeft="12.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" android:textIsSelectable="false" />
+        </TableRow>
+        <TableRow android:background="@color/white">
+            <TextView android:textSize="15.0sp" android:textColor="@color/color_value_9" android:paddingRight="6.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:layout_marginTop="4.0dip" android:text="@string/str_quotation_list_payment_terms" android:textIsSelectable="false" />
+            <TextView android:textSize="15.0sp" android:textColor="@color/color_value_3" android:id="@id/id_payment_terms_quotation_detail" android:paddingLeft="12.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" android:textIsSelectable="false" />
+        </TableRow>
+        <TableRow android:background="@color/white">
+            <TextView android:textSize="15.0sp" android:textColor="@color/color_value_9" android:paddingRight="6.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:layout_marginTop="4.0dip" android:text="@string/str_quotation_list_quotation_valid_till" android:textIsSelectable="false" />
+            <TextView android:textSize="15.0sp" android:textColor="@color/color_value_3" android:id="@id/id_quotation_valid_till_quotation_detail" android:paddingLeft="12.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" android:textIsSelectable="false" />
+        </TableRow>
+        <TableRow android:background="@color/white">
+            <TextView android:textSize="15.0sp" android:textColor="@color/color_value_9" android:paddingRight="6.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:layout_marginTop="4.0dip" android:text="@string/str_quotation_list_message" android:textIsSelectable="false" />
+            <TextView android:textSize="15.0sp" android:textColor="@color/color_value_3" android:id="@id/id_message_quotation_detail" android:paddingLeft="12.0dip" android:layout_width="1.0dip" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" android:layout_marginBottom="4.0dip" android:textIsSelectable="false" />
+        </TableRow>
+    </TableLayout>
+</LinearLayout>

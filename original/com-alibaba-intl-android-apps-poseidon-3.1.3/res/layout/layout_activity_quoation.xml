@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="#ffefeff4" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:alibaba="http://schemas.android.com/apk/res/com.alibaba.intl.android.apps.poseidon">
+    <RelativeLayout android:id="@id/id_frag_quoation_bar" android:layout_width="fill_parent" android:layout_height="@dimen/dimen_title_height">
+        <ImageView android:id="@id/id_ctrl_quoation_back" android:padding="4.0dip" android:clickable="true" android:layout_width="36.0dip" android:layout_height="36.0dip" android:layout_marginLeft="4.0dip" android:src="@drawable/ic_message_box" android:layout_centerVertical="true" android:contentDescription="@string/content_desc_null" />
+        <TextView android:gravity="center" android:id="@id/id_ctrl_quoation_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:drawableRight="@drawable/ic_see_less" android:layout_centerInParent="true" />
+        <ImageView android:id="@id/id_ctrl_searcher_box_camera" android:padding="4.0dip" android:clickable="true" android:layout_width="36.0dip" android:layout_height="36.0dip" android:layout_marginRight="4.0dip" android:src="@drawable/ic_categories" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        <TextView android:textSize="15.0sp" android:textColorHint="@color/color_value_a" android:gravity="center_vertical" android:id="@id/id_ctrl_searcher_box_edit" android:background="@drawable/searchview_textfield_bg" android:paddingLeft="12.0dip" android:paddingRight="36.0dip" android:layout_width="fill_parent" android:layout_height="36.0dip" android:hint="@string/search_hint_text" android:singleLine="true" android:drawableLeft="@drawable/ic_search" android:layout_alignParentLeft="true" android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+</RelativeLayout>

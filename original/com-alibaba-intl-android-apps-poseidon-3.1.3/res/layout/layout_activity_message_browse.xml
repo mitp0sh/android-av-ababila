@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ScrollView android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="0.0dip">
+            <RelativeLayout android:background="@color/color_value_f8" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <TextView android:textSize="15.0sp" android:textColor="@color/color_value_9" android:gravity="right" android:id="@id/id_address_label_message_detail" android:padding="8.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/str_from" android:layout_alignRight="@id/id_subject_label_message_detail" />
+                <TextView android:textSize="16.0sp" android:textColor="@color/color_value_6" android:gravity="top" android:id="@id/id_address_message_detail" android:background="@null" android:padding="8.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minWidth="100.0dip" android:layout_toLeftOf="@id/id_time_message_detail" android:layout_toRightOf="@id/id_address_label_message_detail" android:textIsSelectable="false" />
+                <View android:id="@id/id_sperater_line_1" android:background="@drawable/line_h_grey" android:layout_width="fill_parent" android:layout_height="0.5dip" android:layout_below="@id/id_address_message_detail" />
+                <TextView android:textSize="15.0sp" android:textColor="@color/color_value_9" android:id="@id/id_subject_label_message_detail" android:padding="8.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/str_subject" android:layout_below="@id/id_sperater_line_1" />
+                <TextView android:textSize="16.0sp" android:textColor="@color/color_value_6" android:textColorHint="@color/color_value_9" android:gravity="center_vertical" android:id="@id/id_subject_message_detail" android:background="@null" android:padding="8.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minWidth="100.0dip" android:hint="@string/str_subject_hint" android:layout_toRightOf="@id/id_subject_label_message_detail" android:layout_below="@id/id_sperater_line_1" android:textIsSelectable="false" />
+                <TextView android:textSize="12.0sp" android:textColor="@color/color_value_9" android:gravity="center_vertical" android:id="@id/id_time_message_detail" android:background="@null" android:paddingLeft="8.0dip" android:paddingRight="8.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="100.0dip" android:layout_alignTop="@id/id_address_label_message_detail" android:layout_alignBottom="@id/id_address_label_message_detail" android:layout_alignParentRight="true" android:textIsSelectable="false" />
+            </RelativeLayout>
+            <View android:background="@drawable/line_h_grey" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+            <LinearLayout android:gravity="center_vertical" android:id="@id/id_content_message_ll_show_attach" android:padding="8.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="30.0dip" android:src="@drawable/ic_msg_attachment" android:contentDescription="@string/content_desc_null" />
+                <TextView android:textSize="16.0sp" android:textColor="@color/color_value_6" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:text="@string/str_attachment" />
+                <TextView android:textSize="16.0sp" android:textColor="@color/color_value_6" android:id="@id/id_content_message_tv_attach_number" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:text="99" android:singleLine="true" android:layout_weight="1.0" />
+                <ImageView android:id="@id/id_content_message_iv_arrow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_see_more" android:contentDescription="@string/content_desc_null" />
+            </LinearLayout>
+            <View android:id="@id/id_content_message_v_line_attach_show" android:background="@drawable/line_h_grey" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <LinearLayout android:orientation="vertical" android:id="@id/id_content_message_ll_detail" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <ListView android:id="@id/id_content_message_lv_attachment" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:divider="@drawable/line_h_grey" android:dividerHeight="0.5dip" />
+                    <TextView android:textSize="16.0sp" android:textColor="@color/color_value_6" android:textColorHint="@color/color_value_9" android:gravity="top" android:id="@id/id_content_message_detail" android:background="@null" android:padding="8.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:minHeight="200.0dip" android:hint="@string/str_message_detail_loading" android:singleLine="false" android:textIsSelectable="false" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+    <com.alibaba.intl.android.apps.poseidon.ui.control.CtrlFooterActionBar android:id="@id/id_footer_action_bar" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+</LinearLayout>

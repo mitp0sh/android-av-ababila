@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:layout_marginTop="8.0dip">
+        <com.alibaba.intl.android.picture.widget.LoadableImageView android:gravity="center_vertical" android:id="@id/id_thumb_item_product_info" android:layout_width="72.0dip" android:layout_height="72.0dip" android:layout_marginTop="8.0dip" android:scaleType="fitStart" />
+        <RelativeLayout android:id="@id/id_group_item_product_info" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="6.0dip" android:layout_toRightOf="@id/id_thumb_item_product_info">
+            <TextView android:textSize="15.0sp" android:textStyle="bold" android:textColor="@color/color_value_3" android:id="@id/id_name_item_product_info" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxLines="2" />
+            <LinearLayout android:textSize="13.0sp" android:orientation="vertical" android:id="@id/id_tablelayout1_item_quotation_info" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/str_mini_order_label" android:layout_below="@id/id_name_item_product_info" android:layout_alignLeft="@id/id_name_item_product_info" />
+        </RelativeLayout>
+    </RelativeLayout>
+    <LinearLayout android:textSize="13.0sp" android:orientation="vertical" android:id="@id/id_tablelayout2_item_quotation_info" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" />
+    <TextView android:textSize="15.0sp" android:textColor="@color/color_value_9" android:id="@id/id_detail_lable_item_quotation_info" android:paddingRight="6.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:layout_marginTop="12.0dip" android:text="@string/str_product_details" android:textIsSelectable="false" />
+    <TextView android:textSize="15.0sp" android:textColor="@color/color_value_3" android:id="@id/id_detail_value_item_quotation_info" android:paddingRight="6.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:layout_marginTop="8.0dip" android:layout_marginBottom="8.0dip" android:textIsSelectable="false" />
+</LinearLayout>

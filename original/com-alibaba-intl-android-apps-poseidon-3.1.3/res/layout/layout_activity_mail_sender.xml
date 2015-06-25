@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" style="@style/ios_layout">
+        <TextView android:textSize="13.0sp" android:textColor="@color/color_value_9" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/str_mail_sender_to" />
+        <EditText android:id="@id/id_edit_to_activity_mail_sender" android:inputType="textEmailAddress" style="@style/ios_edittext" />
+    </LinearLayout>
+    <View style="@style/common_divider_broken" />
+    <LinearLayout android:orientation="horizontal" style="@style/ios_layout">
+        <TextView android:textSize="13.0sp" android:textColor="@color/color_value_9" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/str_mail_sender_subject" />
+        <EditText android:id="@id/id_edit_subject_activity_mail_sender" android:digits="@string/str_edit_text_input_enter_digits" style="@style/ios_edittext" />
+    </LinearLayout>
+    <View style="@style/common_divider_broken" />
+    <EditText android:gravity="center|left|top" android:id="@id/id_edit_body_ativity_mail_sender" android:layout_height="wrap_content" android:minHeight="180.0dip" android:digits="@string/str_edit_text_input_enter_digits" style="@style/ios_edittext" />
+    <TextView android:textSize="13.0sp" android:textColor="@color/color_value_9" android:text="@string/str_mail_sender_footer" style="@style/ios_edittext" />
+</LinearLayout>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="290.0dip" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/id_atm_login_ll_loading_info" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginTop="18.0dip" android:layout_marginRight="15.0dip">
+        <TextView android:textSize="16.0sp" android:textStyle="bold" android:textColor="@color/black" android:id="@id/id_atm_login_tv_user_id" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true" />
+        <ProgressBar android:id="@id/id_atm_login_pb_loading" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:layout_toLeftOf="@id/id_atm_login_tv_user_id" android:layout_alignBottom="@id/id_atm_login_tv_user_id" style="?android:attr/progressBarStyleSmall" />
+    </RelativeLayout>
+    <TextView android:textSize="13.0sp" android:textColor="@color/color_value_3" android:id="@id/id_atm_login_tv_info" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginTop="5.0dip" android:layout_marginRight="15.0dip" android:layout_marginBottom="15.0dip" android:text="@string/str_notice_login_off_line" />
+    <EditText android:layout_gravity="center_horizontal" android:id="@id/pwd" android:layout_marginLeft="15.0dip" android:layout_marginRight="15.0dip" android:layout_marginBottom="15.0dip" android:singleLine="true" android:inputType="textPassword" style="@style/normal_edittext" />
+    <RelativeLayout android:gravity="center_horizontal" android:id="@id/id_rl_auth_code_layout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="15.0dip">
+        <TextView android:textSize="14.0sp" android:textColor="@color/gray" android:id="@id/id_hint_input_auth_code" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginRight="15.0dip" android:text="@string/str_atm_code_auth_hint" />
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_below="@id/id_hint_input_auth_code">
+            <EditText android:textSize="14.0sp" android:id="@id/id_et_auth_code" android:layout_width="0.0dip" android:layout_marginLeft="15.0dip" android:layout_marginRight="10.0dip" android:singleLine="true" android:layout_weight="1.0" android:inputType="text" style="@style/normal_edittext" />
+            <com.alibaba.intl.android.picture.widget.LoadableImageView android:id="@id/id_liv_auth_code_img" android:background="@color/gray" android:layout_width="100.0dip" android:layout_height="30.0dip" android:layout_marginRight="15.0dip" android:scaleType="fitXY" />
+        </LinearLayout>
+    </RelativeLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <Button android:textColor="@color/black" android:id="@id/atm_login_cancel" android:background="@drawable/atm_bg_relogin_button" android:layout_width="0.0dip" android:layout_height="50.0dip" android:text="@string/str_cancel" android:layout_weight="1.0" />
+        <Button android:textColor="@color/black" android:id="@id/atm_login" android:background="@drawable/atm_bg_relogin_button" android:layout_width="0.0dip" android:layout_height="50.0dip" android:layout_marginLeft="-1.0dip" android:text="@string/atm_login" android:layout_weight="1.0" />
+    </LinearLayout>
+</LinearLayout>

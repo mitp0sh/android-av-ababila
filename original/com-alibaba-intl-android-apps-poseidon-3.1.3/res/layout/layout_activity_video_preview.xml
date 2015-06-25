@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="@color/black" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <SurfaceView android:id="@id/id_preview" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <ImageView android:id="@id/id_video_preview" android:background="@color/black" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent" android:contentDescription="@string/content_desc_null" />
+    <LinearLayout android:orientation="vertical" android:background="@color/transparent_background" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <ProgressBar android:layout_gravity="center_vertical" android:id="@id/id_progressbar_time" android:layout_width="fill_parent" android:layout_height="3.0dip" android:max="100" android:progress="0" android:indeterminateDrawable="@drawable/rfq_recorder_progressbar" android:progressDrawable="@drawable/rfq_recorder_progressbar" style="@android:style/Widget.ProgressBar.Horizontal" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:background="@color/transparent_background" android:layout_width="fill_parent" android:layout_height="80.0dip" android:baselineAligned="true">
+            <LinearLayout android:background="@color/transparent_background" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+                <TextView android:textSize="18.0sp" android:gravity="center" android:id="@id/id_retake" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/str_record_video_retake" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:background="@color/transparent_background" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+                <ImageButton android:id="@id/id_video_play" android:background="@drawable/bg_transparent" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_video_play" android:contentDescription="@string/content_desc_null" />
+                <ImageButton android:id="@id/id_video_stop" android:background="@drawable/bg_transparent" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_video_stop" android:contentDescription="@string/content_desc_null" />
+            </LinearLayout>
+            <LinearLayout android:background="@color/transparent_background" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+                <TextView android:textSize="18.0sp" android:textColor="@color/bg_orange_common" android:gravity="center" android:id="@id/id_use" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/str_record_video_use" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

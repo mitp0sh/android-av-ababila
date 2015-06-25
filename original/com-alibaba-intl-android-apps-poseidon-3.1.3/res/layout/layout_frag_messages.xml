@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:id="@id/id_layout_network_state" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:alibaba="http://schemas.android.com/apk/res/com.alibaba.intl.android.apps.poseidon">
+    <ViewStub android:id="@id/id_view_stub_network_unavailable_display" android:layout="@layout/layout_network_unavailable_display" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <com.alibaba.intl.android.graphics.pulltorefresh.PullToRefreshListView android:id="@id/id_list_frag_messages" android:background="@drawable/bg_windows_screen" android:layout_width="fill_parent" android:layout_height="fill_parent" android:divider="@drawable/line_h_grey" android:dividerHeight="0.5dip" android:footerDividersEnabled="false" alibaba:ptrAdapterViewBackground="@color/white" alibaba:ptrHeaderBackground="@color/color_value_f8" alibaba:ptrHeaderTextColor="@color/color_value_9" alibaba:ptrHeaderSubTextColor="@color/color_value_9" alibaba:ptrShowIndicator="false" />
+</LinearLayout>

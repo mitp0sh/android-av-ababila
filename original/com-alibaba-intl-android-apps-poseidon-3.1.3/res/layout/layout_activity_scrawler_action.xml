@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/layout_root_view" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.alibaba.intl.android.picture.widget.ScrawlerImageView android:id="@id/id_scrawler_image_view" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <RelativeLayout android:gravity="center|left" android:orientation="horizontal" android:id="@id/id_image_titlebar" android:clickable="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <TextView android:id="@id/id_go_back_1" android:background="#bb000000" android:paddingLeft="15.0dip" android:paddingTop="10.0dip" android:paddingRight="15.0dip" android:paddingBottom="10.0dip" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text=" 返回 " />
+        <TextView android:id="@id/id_go_back" android:background="#bb000000" android:paddingLeft="15.0dip" android:paddingTop="10.0dip" android:paddingRight="15.0dip" android:paddingBottom="10.0dip" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text=" 标注 " android:layout_toRightOf="@id/id_go_back_1" />
+        <TextView android:id="@id/id_divider_1" android:background="#bb000000" android:paddingLeft="15.0dip" android:paddingTop="10.0dip" android:paddingRight="15.0dip" android:paddingBottom="10.0dip" android:clickable="true" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="10.0dip" android:text=" 浏览 " android:layout_toRightOf="@id/id_go_back" android:layout_alignBottom="@id/id_go_back" />
+        <TextView android:textColor="@android:color/white" android:id="@id/id_image_count" android:background="#bb000000" android:paddingLeft="15.0dip" android:paddingTop="10.0dip" android:paddingRight="15.0dip" android:paddingBottom="10.0dip" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text=" 颜色 " android:layout_toRightOf="@id/id_divider_1" />
+    </RelativeLayout>
+</RelativeLayout>

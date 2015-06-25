@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_enabled="true" android:state_checked="true" android:drawable="@drawable/atm_chatting_detail_sel_emotion_pressed" />
+    <item android:drawable="@drawable/atm_chatting_detail_sel_emotion_nor" />
+</selector>
